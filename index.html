@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Logo" width="45" height="45" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#articles">articles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <section id="home">
+            <div class="intro-text">
+                <h5>hello world, i'm <span id="highlight">bilal</span></h5>
+                <h1>I code.</h1>
+            </div>
+            <img src="./images/desktop.png" alt="Your Image" class="intro-image">
+            <div class="gif-container">
+                <iframe src="https://giphy.com/embed/GkD4U3VfiIbzcBhQNu" frameborder="0" class="giphy-embed"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2>Articles</h2>
+            <ul class="article-list">
+                <li>
+                    <a href="https://example.com/article1" target="_blank">Understanding Graph Databases</a>
+                    <span class="article-date">October 15, 2024</span>
+                </li>
+                <hr class="articles-divider">
+                <li>
+                    <a href="https://example.com/article2" target="_blank">Why Bootstrap is Great for Responsive
+                        Design</a>
+                    <span class="article-date">September 25, 2024</span>
+                </li>
+                <hr class="articles-divider">
+                <li>
+                    <a href="https://example.com/article3" target="_blank">Exploring the Benefits of SCSS</a>
+                    <span class="article-date">August 30, 2024</span>
+                </li>
+                <hr class="articles-divider">
+                <li>
+                    <a href="https://example.com/article4" target="_blank">JavaScript Tips for Beginners</a>
+                    <span class="article-date">July 10, 2024</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li>
+                    <div class="project-header">
+                        <a href="https://example.com/article1" target="_blank">Syllabifi</a>
+                        <span class="project-techstack">Python</span>
+                    </div>
+                    <p class="project-description">A tool to process audio into fine-grained segments for linguistic and speech analysis.</p>
+                </li>
+                <hr class="projects-divider">
+                <li>
+                    <div class="project-header">
+                        <a href="https://example.com/article1" target="_blank">Predictive Fleet Care</a>
+                        <span class="project-techstack">Python</span>
+                    </div>
+                    <p class="project-description">Predict maintenance needs for trucks using ML techniques and historical data, aiming to reduce unplanned downtimes.</p>
+                </li>
+                <hr class="projects-divider">
+                <li>
+                    <div class="project-header">
+                        <a href="https://example.com/article1" target="_blank">Predictive Maintenance Pipeline for IoT Sensor Data</a>
+                        <span class="project-techstack">Python</span>
+                    </div>
+                    <p class="project-description">Maintenance pipeline using IoT sensor data from the CMAPSSData dataset to predict the Remaining Useful Life (RUL) of engines.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="text-center py-4 text-light icons">
+        <div class="icon-container">
+            <a href="https://github.com/yourusername" class="text-light mx-2" target="_blank"><i
+                    class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" class="text-light mx-2" target="_blank"><i
+                    class="fab fa-linkedin fa-lg"></i></a>
+            <a href="mailto:youremail@example.com" class="text-light mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
