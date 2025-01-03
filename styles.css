@@ -13,6 +13,7 @@ html,
 body {
     height: 100%;
     background-color: var(--gray-10);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,13 +40,18 @@ body {
 
 .nav-link {
     color: wheat;
+    opacity: 80%;
     text-decoration: none;
     font-size: 1.15rem;
     margin: 0.5rem;
+    transition: opacity 0.3s ease, color 0s ease, letter-spacing 0.3s ease;
 }
 
 .nav-link:hover {
-    color: white;
+    /* color: white; */
+    color: wheat;
+    opacity: 90%;
+    letter-spacing: 0.02rem;
 }
 
 /* CONTENT */
@@ -68,6 +74,7 @@ body {
 
 .intro-text {
     display: block;
+    margin-left: 3rem;
 }
 
 .intro-text h5 #highlight {
@@ -88,7 +95,7 @@ body {
     max-width: 100%;
     height: auto;
     width: 15rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 .gif-container {
@@ -103,9 +110,10 @@ body {
 }
 
 #articles h2 {
-    font-family: "Merriweather", serif;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.05rem;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .article-list {
@@ -115,30 +123,40 @@ body {
 
 .article-list li {
     display: flex;
-    /* Flexbox to align items on the same row */
     justify-content: space-between;
-    /* Distribute space between article name and date */
     margin-bottom: 0.5rem;
+}
+
+.article-list li:hover {
+    cursor: pointer;
 }
 
 .article-list a {
     text-decoration: none;
-    font-family: "Playfair Display";
+    font-family: "Merriweather", serif;
     letter-spacing: 0.05rem;
     color: wheat;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-size: 1.05rem;
+    opacity: 80%;
+    transition: opacity 0.3s ease;
 }
 
-.article-list a:hover {
-    color: white;
+.article-list li:hover a {
+    opacity: 90%;
 }
 
 .article-date {
     color: wheat;
+    font-family: "Merriweather", serif;
+    font-style: italic;
     font-size: 0.9rem;
     margin-left: 1rem;
     opacity: 40%;
+    transition: opacity 0.3s ease;
+}
+
+.article-list li:hover .article-date {
+    opacity: 60%;
 }
 
 .articles-divider {
@@ -157,7 +175,7 @@ body {
 #projects h2 {
     font-family: "Merriweather", serif;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .project-list {
@@ -169,39 +187,59 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.project-list a {
-    text-decoration: none;
-    font-family: "Playfair Display";
-    letter-spacing: 0.05rem;
-    color: wheat;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+.project-list li:hover {
+    cursor: pointer;
 }
 
-.project-list a:hover {
-    color: white;
+.project-list a {
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.05rem;
+    color: wheat;
+    font-size: 1.10rem;
+    letter-spacing: 0.04rem;
+    opacity: 80%;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+}
+
+.project-list li:hover a {
+    opacity: 90%;
+    font-size: 1.11rem;
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
 
 .project-techstack {
     color: wheat;
     font-size: 0.9rem;
+    font-family: "Merriweather", serif;
+    font-style: italic;
     margin-left: 1rem;
     opacity: 40%;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+}
+
+.project-list li:hover .project-techstack {
+    opacity: 60%;
+    font-size: 0.91rem;
 }
 
 .project-description {
-    font-family: "Playfair Display";
-    letter-spacing: 0.05rem;
+    font-family: "Merriweather", serif;
     color: wheat;
     font-size: 0.9rem;
-    opacity: 40%;
+    opacity: 30%;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+}
+
+.project-list li:hover .project-description {
+    opacity: 65%;
+    font-size: 0.91rem;
 }
 
 .projects-divider {
@@ -275,7 +313,7 @@ footer {
         height: 200px;
         overflow: hidden;
     }
-    
+
     .giphy-embed {
         width: 100%;
         height: 100%;
