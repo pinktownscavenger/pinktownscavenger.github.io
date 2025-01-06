@@ -44,14 +44,24 @@ body {
     text-decoration: none;
     font-size: 1.15rem;
     margin: 0.5rem;
-    transition: opacity 0.3s ease, color 0s ease, letter-spacing 0.3s ease;
+    transition: opacity 0.3s ease, color 0s ease;
 }
 
 .nav-link:hover {
     /* color: white; */
     color: wheat;
     opacity: 90%;
-    letter-spacing: 0.02rem;
+    /* letter-spacing: 0.02rem; */
+}
+
+#download-btn{
+    color: rgb(220, 220, 107);
+    transition: color 0.3s ease;
+}
+
+#download-btn:hover {
+    color: yellow;
+    opacity: 90%;
 }
 
 /* CONTENT */
@@ -74,7 +84,7 @@ body {
 
 .intro-text {
     display: block;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .intro-text h5 #highlight {
@@ -95,7 +105,7 @@ body {
     max-width: 100%;
     height: auto;
     width: 15rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
 .gif-container {
