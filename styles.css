@@ -316,20 +316,52 @@ footer {
         display: none;
     }
 
-    .gif-container {
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-    }
-
-    .giphy-embed {
-        width: 100%;
-        height: 100%;
-    }
-
     #articles {
         margin-top: 2rem;
+    }
+
+    #articles h2{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .article-list li{
+        flex-direction: column;
+    }
+
+    .article-list a{
+        font-size: 0.85rem;
+    }
+
+    .article-date{
+        font-size: 0.70rem;
+        margin-left: 0rem;
+    }
+
+    #projects {
+        margin-top: 2rem;
+    }
+
+    #projects h2{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-list a{
+        font-size: 0.85rem;
+    }
+
+    .project-techstack{
+        font-size: 0.70rem;
+    }
+
+    .project-description{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        margin-top: 0rem;
     }
 }
