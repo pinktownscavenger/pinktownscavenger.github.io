@@ -238,7 +238,7 @@ body {
 
 .project-list li:hover .project-techstack {
     opacity: 60%;
-    font-size: 0.91rem;
+    /* font-size: 0.91rem; */
 }
 
 .project-description {
@@ -351,12 +351,21 @@ footer {
         margin-bottom: 1.5rem;
     }
 
+    .project-header {
+        display: block;
+    }
+
     .project-list a{
         font-size: 0.85rem;
     }
 
-    .project-techstack{
+    .project-techstack {
+        margin-left: 0;
+        display: block;
+        text-align: left;
         font-size: 0.70rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
     }
 
     .project-description{
