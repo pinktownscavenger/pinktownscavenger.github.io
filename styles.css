@@ -260,6 +260,60 @@ body {
     margin-top: 0.2rem;
 }
 
+/* MOVIES */
+
+#movies {
+    margin-top: 5rem;
+    color: wheat;
+}
+
+#movies h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-9);
+    border-radius: 8px;
+    padding: 0.8rem;
+    overflow: hidden;
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.movie-title {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    color: wheat;
+    margin-top: 0.7rem;
+    margin-bottom: 0rem;
+    opacity: 80%;
+    text-align: center;
+}
+
+.movie-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* FOOTER */
 
 footer {
