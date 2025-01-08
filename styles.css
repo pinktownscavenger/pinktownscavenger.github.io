@@ -31,6 +31,8 @@ body {
     width: 55%;
     margin: auto;
     /* padding: 0 2rem; */
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 1.5rem;
 }
 
@@ -216,7 +218,7 @@ body {
 
 .project-list li:hover a {
     opacity: 90%;
-    font-size: 1.11rem;
+    /* font-size: 1.11rem; */
 }
 
 .project-header {
@@ -251,7 +253,7 @@ body {
 
 .project-list li:hover .project-description {
     opacity: 65%;
-    font-size: 0.91rem;
+    /* font-size: 0.91rem; */
 }
 
 .projects-divider {
