@@ -1,8 +1,11 @@
-import feedparser
 import os
+import json
+import feedparser
 from bs4 import BeautifulSoup
 
 index_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../index.html")
+movies_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../movies.json")
+
 rss_url = "https://letterboxd.com/pinktownscvngr/rss/"
 feed = feedparser.parse(rss_url)
 
@@ -27,21 +30,5 @@ for entry in feed.entries[:4]:
         "poster": poster_image
     })
 
-with open(index_file_path, "r", encoding="utf-8") as file:
-    soup = BeautifulSoup(file, "html.parser")
-
-movie_list = soup.find("ul", class_="movie-list")
-if movie_list:
-    movie_list.clear()
-
-    for movie in recent_movies:
-        li = soup.new_tag("li", **{"class": "movie-card"})
-        a = soup.new_tag("a", href=movie["link"], target="_blank")
-        img = soup.new_tag("img", src=movie["poster"], alt="Movie Poster", **{"class": "movie-poster"})
-        a.append(img)
-        li.append(a)
-        movie_list.append(li)
-
-with open(index_file_path, "w", encoding="utf-8") as file:
-    formatted_html = soup.prettify()
-    file.write(formatted_html)
+with open(movies_file_path, "w", encoding="utf-8") as json_file:
+    json.dump(recent_movies, json_file, ensure_ascii=False, indent=4)
