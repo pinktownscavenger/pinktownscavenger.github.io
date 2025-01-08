@@ -4,7 +4,7 @@ import feedparser
 from bs4 import BeautifulSoup
 
 index_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../index.html")
-movies_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../movies.json")
+movies_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../assets/movies.json")
 
 rss_url = "https://letterboxd.com/pinktownscvngr/rss/"
 feed = feedparser.parse(rss_url)
