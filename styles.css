@@ -382,7 +382,7 @@ footer {
     #articles h2{
         text-align: center;
         font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.9rem;
     }
 
     .article-list li{
@@ -390,7 +390,7 @@ footer {
     }
 
     .article-list a{
-        font-size: 0.85rem;
+        font-size: 0.80rem;
     }
 
     .article-date{
@@ -429,7 +429,31 @@ footer {
         font-size: 0.8rem;
     }
 
+    #movies {
+        margin-top: 3rem;
+    }
+    
+    #movies h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .movie-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .movie-card {
+        padding: 0.4rem;
+    }
+
+    .movie-poster {
+        max-width: 100px;
+        height: auto;
+    }
+
     footer{
-        margin-top: 0rem;
+        margin-top: 2rem;
     }
 }
