@@ -74,6 +74,7 @@
             </div>
             <img alt="Your Image" class="intro-image" src="./images/desktop.png" />
         </section>
+
         <section id="articles">
             <h2>
                 Articles
@@ -100,6 +101,7 @@
                 </li>
             </ul>
         </section>
+
         <section id="projects">
             <h2>
                 Projects
@@ -150,38 +152,15 @@
                 </li>
             </ul>
         </section>
+
         <section id="movies">
-            <h2>
-                Recent Letterboxd
-            </h2>
+            <h2>Recent Letterboxd</h2>
             <ul class="movie-list">
-                <li class="movie-card">
-                    <a href="https://letterboxd.com/pinktownscvngr/film/yo-yo-honey-singh-famous/" target="_blank">
-                        <img alt="Movie Poster" class="movie-poster"
-                            src="https://a.ltrbxd.com/resized/film-poster/1/1/3/6/7/5/9/1136759-yo-yo-honey-singh-famous-0-600-0-900-crop.jpg?v=c24b499e3e" />
-                    </a>
-                </li>
-                <li class="movie-card">
-                    <a href="https://letterboxd.com/pinktownscvngr/film/wolfs/" target="_blank">
-                        <img alt="Movie Poster" class="movie-poster"
-                            src="https://a.ltrbxd.com/resized/film-poster/7/8/9/0/1/0/789010-wolfs-0-600-0-900-crop.jpg?v=dc5ee2be96" />
-                    </a>
-                </li>
-                <li class="movie-card">
-                    <a href="https://letterboxd.com/pinktownscvngr/film/contagion/" target="_blank">
-                        <img alt="Movie Poster" class="movie-poster"
-                            src="https://a.ltrbxd.com/resized/sm/upload/a3/9l/70/5b/kbC6I0AOSLTHFA2dieyat9h8QHP-0-600-0-900-crop.jpg?v=85cf37099a" />
-                    </a>
-                </li>
-                <li class="movie-card">
-                    <a href="https://letterboxd.com/pinktownscvngr/film/aradhana/" target="_blank">
-                        <img alt="Movie Poster" class="movie-poster"
-                            src="https://a.ltrbxd.com/resized/film-poster/7/9/8/1/6/79816-aradhana-0-600-0-900-crop.jpg?v=69b3d560c3" />
-                    </a>
-                </li>
+                <!-- Movie cards will be dynamically inserted here by JavaScript -->
             </ul>
         </section>
     </div>
+
     <footer class="text-center py-4 text-light icons">
         <div class="icon-container">
             <a class="text-light mx-2" href="https://github.com/pinktownscavenger" target="_blank">
@@ -198,12 +177,43 @@
             </a>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     </script>
+
+
+    <script>
+        fetch('assets/movies.json')
+            .then(response => response.json())
+            .then(movies => {
+                const movieList = document.querySelector('.movie-list');
+                movieList.innerHTML = '';
+
+                movies.forEach(movie => {
+                    const li = document.createElement('li');
+                    li.classList.add('movie-card');
+
+                    const a = document.createElement('a');
+                    a.href = movie.link;
+                    a.target = '_blank';
+
+                    const img = document.createElement('img');
+                    img.src = movie.poster;
+                    img.alt = 'Movie Poster';
+                    img.classList.add('movie-poster');
+
+                    a.appendChild(img);
+                    li.appendChild(a);
+                    movieList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error loading movies:', error));
+    </script>
+
 </body>
 
 </html>
