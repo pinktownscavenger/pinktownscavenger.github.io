@@ -1,4 +1,4 @@
-name: Update Movies on Website
+name: update-movies
 
 on:
   schedule:
