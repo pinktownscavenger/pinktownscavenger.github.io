@@ -29,8 +29,8 @@ jobs:
         run: |
           git config --global user.name "Your GitHub Actions Bot"
           git config --global user.email "github-actions-bot@example.com"
-          git add index.html
-          git commit -m "Update movies on $(date)"
+          git add assets/movies.json
+          git commit -m "Update assets/movies.json on $(date)"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
