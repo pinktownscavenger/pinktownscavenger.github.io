@@ -262,6 +262,50 @@ body {
     margin-top: 0.2rem;
 }
 
+/* DISCOGRAPHY */
+
+#discography {
+    margin-top: 5rem;
+    color: wheat;
+}
+
+#discography h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.discography-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.discography-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-9);
+    border-radius: 8px;
+    padding: 0.8rem;
+    overflow: hidden;
+}
+
+.discography-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.discography-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* MOVIES */
 
 #movies {
