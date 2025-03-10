@@ -1,5 +1,15 @@
 [
     {
+        "title": "Runaway Jury",
+        "link": "https://letterboxd.com/pinktownscvngr/film/runaway-jury/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/5/4/0/5/45405-runaway-jury-0-600-0-900-crop.jpg?v=118d3396b2"
+    },
+    {
+        "title": "Ad Astra",
+        "link": "https://letterboxd.com/pinktownscvngr/film/ad-astra-2019/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/3/5/3/4/8/5/353485-ad-astra-0-600-0-900-crop.jpg?v=a4302e46ef"
+    },
+    {
         "title": "Companion",
         "link": "https://letterboxd.com/pinktownscvngr/film/companion-2025/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/7/1/7/2/977172-companion-2025-0-600-0-900-crop.jpg?v=66c5c946ec"
@@ -8,15 +18,5 @@
         "title": "Woman of the Hour",
         "link": "https://letterboxd.com/pinktownscvngr/film/woman-of-the-hour/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/7/5/0/5/6/6/750566-woman-of-the-hour-0-600-0-900-crop.jpg?v=ea66716683"
-    },
-    {
-        "title": "Oddity",
-        "link": "https://letterboxd.com/pinktownscvngr/film/oddity-2024/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/9/9/9/2/5/1099925-oddity-0-600-0-900-crop.jpg?v=d790ed6df8"
-    },
-    {
-        "title": "Caddo Lake",
-        "link": "https://letterboxd.com/pinktownscvngr/film/caddo-lake/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/7/7/7/9/7/9/777979-caddo-lake-0-600-0-900-crop.jpg?v=ac31014d09"
     }
 ]
