@@ -1,5 +1,10 @@
 [
     {
+        "title": "Sinners",
+        "link": "https://letterboxd.com/pinktownscvngr/film/sinners-2025/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/1/6/6/0/0/1116600-sinners-2025-0-600-0-900-crop.jpg?v=00ce32e0ba"
+    },
+    {
         "title": "MaXXXine",
         "link": "https://letterboxd.com/pinktownscvngr/film/maxxxine/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/9/2/2/8/5/8/922858-maxxxine-0-600-0-900-crop.jpg?v=a0fd94e61f"
@@ -13,10 +18,5 @@
         "title": "Black Mirror: Common People",
         "link": "https://letterboxd.com/pinktownscvngr/film/black-mirror-common-people/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/3/3/5/3/7/8/1335378-black-mirror-common-people-0-600-0-900-crop.jpg?v=3c4c91704f"
-    },
-    {
-        "title": "Black Mirror: USS Callister – Into Infinity",
-        "link": "https://letterboxd.com/pinktownscvngr/film/black-mirror-uss-callister-into-infinity/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/3/3/5/3/8/3/1335383-black-mirror-uss-callister-into-infinity-0-600-0-900-crop.jpg?v=f383aa095e"
     }
 ]
