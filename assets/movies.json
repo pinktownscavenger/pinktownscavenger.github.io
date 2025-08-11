@@ -1,5 +1,10 @@
 [
     {
+        "title": "Kung Fu Hustle",
+        "link": "https://letterboxd.com/pinktownscvngr/film/kung-fu-hustle/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/1/2/8/47128-kung-fu-hustle-0-600-0-900-crop.jpg?v=501b38b95f"
+    },
+    {
         "title": "A History of Violence",
         "link": "https://letterboxd.com/pinktownscvngr/film/a-history-of-violence/",
         "poster": "https://a.ltrbxd.com/resized/sm/upload/7g/wl/b8/1g/mz1qCHXxTUJm2AqOdW3IIpwYdo3-0-600-0-900-crop.jpg?v=782f3e510e"
@@ -13,10 +18,5 @@
         "title": "Novocaine",
         "link": "https://letterboxd.com/pinktownscvngr/film/novocaine-2025/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/8/1/0/1/7/1081017-novocaine-2025-0-600-0-900-crop.jpg?v=bf4021de18"
-    },
-    {
-        "title": "Cape Fear",
-        "link": "https://letterboxd.com/pinktownscvngr/film/cape-fear-1991/",
-        "poster": "https://a.ltrbxd.com/resized/sm/upload/wc/jb/p9/ds/cape-fear-0-600-0-900-crop.jpg?v=6e148eef07"
     }
 ]
