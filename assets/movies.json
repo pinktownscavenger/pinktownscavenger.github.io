@@ -1,5 +1,15 @@
 [
     {
+        "title": "Annihilation",
+        "link": "https://letterboxd.com/pinktownscvngr/film/annihilation/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/2/2/7/7/8/4/227784-annihilation-0-600-0-900-crop.jpg?v=35308091d6"
+    },
+    {
+        "title": "Percy Jackson & the Olympians: The Lightning Thief",
+        "link": "https://letterboxd.com/pinktownscvngr/film/percy-jackson-the-olympians-the-lightning-thief/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/3/0/2/6/4/30264-percy-jackson-the-olympians-the-lightning-thief-0-600-0-900-crop.jpg?v=a87204f8e1"
+    },
+    {
         "title": "Rehnaa Hai Terre Dil Mein",
         "link": "https://letterboxd.com/pinktownscvngr/film/rehnaa-hai-terre-dil-mein/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/8/9/2/2/18922-rehnaa-hai-terre-dil-mein-0-600-0-900-crop.jpg?v=93be07c6ee"
@@ -8,15 +18,5 @@
         "title": "The Conjuring: Last Rites",
         "link": "https://letterboxd.com/pinktownscvngr/film/the-conjuring-last-rites/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/9/3/6/0/6/5/936065-the-conjuring-last-rites-0-600-0-900-crop.jpg?v=597eedcd06"
-    },
-    {
-        "title": "Weapons",
-        "link": "https://letterboxd.com/pinktownscvngr/film/weapons-2025/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/2/1/0/9/972109-weapons-2025-0-600-0-900-crop.jpg?v=8100270337"
-    },
-    {
-        "title": "Gladiator II",
-        "link": "https://letterboxd.com/pinktownscvngr/film/gladiator-ii/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/4/8/6/9/7/8/486978-gladiator-ii-0-600-0-900-crop.jpg?v=0fb2edf525"
     }
 ]
