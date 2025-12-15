@@ -1,5 +1,10 @@
 [
     {
+        "title": "The Legend of Maula Jatt",
+        "link": "https://letterboxd.com/pinktownscvngr/film/the-legend-of-maula-jatt/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/3/9/6/0/2/9/396029-the-legend-of-maula-jatt-0-600-0-900-crop.jpg?v=fbd33b9273"
+    },
+    {
         "title": "The Hangover Part III",
         "link": "https://letterboxd.com/pinktownscvngr/film/the-hangover-part-iii/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/8/7/9/5/3/87953-the-hangover-part-iii-0-600-0-900-crop.jpg?v=f0e2a6655e"
@@ -13,10 +18,5 @@
         "title": "The Hangover",
         "link": "https://letterboxd.com/pinktownscvngr/film/the-hangover/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/4/0/1/0/0/40100-the-hangover-0-600-0-900-crop.jpg?v=6464871bf5"
-    },
-    {
-        "title": "Pushpa: The Rise",
-        "link": "https://letterboxd.com/pinktownscvngr/film/pushpa-the-rise/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/6/1/5/0/6/2/615062-pushpa-the-rise-part-1-0-600-0-900-crop.jpg?v=303e980439"
     }
 ]
