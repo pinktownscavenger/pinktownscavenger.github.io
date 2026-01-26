@@ -1,5 +1,10 @@
 [
     {
+        "title": "Laila Majnu",
+        "link": "https://letterboxd.com/pinktownscvngr/film/laila-majnu-2018/1/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/6/9/8/3/3/469833-laila-majnu-2018-0-600-0-900-crop.jpg?v=f09d85239c"
+    },
+    {
         "title": "Parasite",
         "link": "https://letterboxd.com/pinktownscvngr/film/parasite-2019/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/4/2/6/4/0/6/426406-parasite-0-600-0-900-crop.jpg?v=8f5653f710"
@@ -13,10 +18,5 @@
         "title": "Ladies VS. Ricky Bahl",
         "link": "https://letterboxd.com/pinktownscvngr/film/ladies-vs-ricky-bahl/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/6/9/1/4/6/69146-ladies-vs-ricky-bahl-0-600-0-900-crop.jpg?v=644f12c714"
-    },
-    {
-        "title": "The Legend of Maula Jatt",
-        "link": "https://letterboxd.com/pinktownscvngr/film/the-legend-of-maula-jatt/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/3/9/6/0/2/9/396029-the-legend-of-maula-jatt-0-600-0-900-crop.jpg?v=fbd33b9273"
     }
 ]
