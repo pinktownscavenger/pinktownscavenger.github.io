@@ -1,5 +1,10 @@
 [
     {
+        "title": "The Rip",
+        "link": "https://letterboxd.com/pinktownscvngr/film/the-rip-2026/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/8/7/4/4/6/1187446-the-rip-2026-0-600-0-900-crop.jpg?v=d7686b3035"
+    },
+    {
         "title": "Dhurandhar",
         "link": "https://letterboxd.com/pinktownscvngr/film/dhurandhar/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/7/4/5/8/2/1174582-dhurandhar-0-600-0-900-crop.jpg?v=179b5169d5"
@@ -13,10 +18,5 @@
         "title": "No Time to Die",
         "link": "https://letterboxd.com/pinktownscvngr/film/no-time-to-die-2021/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/3/0/5/9/6/4/305964-no-time-to-die-0-600-0-900-crop.jpg?v=4651ce5b05"
-    },
-    {
-        "title": "Spectre",
-        "link": "https://letterboxd.com/pinktownscvngr/film/spectre-2015/",
-        "poster": "https://a.ltrbxd.com/resized/sm/upload/z4/ic/gk/3h/1o9prR1gAZdF9KpxH4qneJ3Rglf-0-600-0-900-crop.jpg?v=bee769afd4"
     }
 ]
