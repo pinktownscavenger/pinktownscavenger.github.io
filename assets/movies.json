@@ -1,5 +1,15 @@
 [
     {
+        "title": "War Machine",
+        "link": "https://letterboxd.com/pinktownscvngr/film/war-machine-2026/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/4/9/6/7/6/1149676-war-machine-2026-0-600-0-900-crop.jpg?v=75d5b01b26"
+    },
+    {
+        "title": "Grave of the Fireflies",
+        "link": "https://letterboxd.com/pinktownscvngr/film/grave-of-the-fireflies/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/4/5/5/8/44558-grave-of-the-fireflies-0-600-0-900-crop.jpg?v=0c61fd55f0"
+    },
+    {
         "title": "Prometheus",
         "link": "https://letterboxd.com/pinktownscvngr/film/prometheus/",
         "poster": "https://a.ltrbxd.com/resized/sm/upload/39/zq/9r/ye/qsYQflQhOuhDpQ0W2aOcwqgDAeI-0-600-0-900-crop.jpg?v=8bfe4f51c3"
@@ -8,15 +18,5 @@
         "title": "BLUE EYE SAMURAI",
         "link": "https://letterboxd.com/pinktownscvngr/film/blue-eye-samurai/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/8/9/0/6/3/1089063-blue-eye-samurai-0-600-0-900-crop.jpg?v=1f468d399d"
-    },
-    {
-        "title": "Past Lives",
-        "link": "https://letterboxd.com/pinktownscvngr/film/past-lives/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/5/9/1/0/5/3/591053-past-lives-0-600-0-900-crop.jpg?v=c600b7854e"
-    },
-    {
-        "title": "Highest 2 Lowest",
-        "link": "https://letterboxd.com/pinktownscvngr/film/highest-2-lowest/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/2/5/0/3/1/1125031-highest-2-lowest-0-600-0-900-crop.jpg?v=4bac6efe11"
     }
 ]
