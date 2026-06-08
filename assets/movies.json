@@ -1,5 +1,15 @@
 [
     {
+        "title": "I Am Legend",
+        "link": "https://letterboxd.com/pinktownscvngr/film/i-am-legend/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/8/2/9/6/48296-i-am-legend-0-600-0-900-crop.jpg?v=5ad5d3b4e2"
+    },
+    {
+        "title": "Vertical Limit",
+        "link": "https://letterboxd.com/pinktownscvngr/film/vertical-limit/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/5/0/7/5/45075-vertical-limit-0-600-0-900-crop.jpg?v=a4f5d3360a"
+    },
+    {
         "title": "Mardaani 2",
         "link": "https://letterboxd.com/pinktownscvngr/film/mardaani-2/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/8/5/9/8/518598-mardaani-2-0-600-0-900-crop.jpg?v=444285fda9"
@@ -8,15 +18,5 @@
         "title": "Chak De! India",
         "link": "https://letterboxd.com/pinktownscvngr/film/chak-de-india/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/4/3/2/9/9/43299-chak-de-india-0-600-0-900-crop.jpg?v=1917a78bdb"
-    },
-    {
-        "title": "Thoda Pyaar Thoda Magic",
-        "link": "https://letterboxd.com/pinktownscvngr/film/thoda-pyaar-thoda-magic/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/4/3/2/5/8/43258-thoda-pyaar-thoda-magic-0-600-0-900-crop.jpg?v=2f600cb107"
-    },
-    {
-        "title": "Groundhog Day",
-        "link": "https://letterboxd.com/pinktownscvngr/film/groundhog-day/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/9/1/4/51914-groundhog-day-0-600-0-900-crop.jpg?v=9361c0080d"
     }
 ]
