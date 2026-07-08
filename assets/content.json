@@ -1,0 +1,39 @@
+{
+    "articles": [
+        {
+            "title": "GraphRAG Showdown: DeepSeek vs. OpenAI",
+            "date": "February 6, 2025",
+            "link": "https://www.linkedin.com/pulse/graphrag-showdown-deepseek-vs-openai-bilal-malik-iq5lf/?trackingId=DigEZJw%2FQ1KKAmgGA2VTZQ%3D%3D"
+        },
+        {
+            "title": "Bridging Knowledge Graphs with Retrieval-Augmented Generation",
+            "date": "November 11, 2024",
+            "link": "https://www.linkedin.com/pulse/graphrag-bridging-knowledge-graphs-generation-bilal-malik-yreyf/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
+        },
+        {
+            "title": "Integrating Cosmos DB into Gremlin-Visualizer",
+            "date": "September 23, 2024",
+            "link": "https://www.linkedin.com/pulse/integrating-cosmos-db-gremlin-visualizer-enhancing-graph-bilal-malik-mwpof/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
+        }
+    ],
+    "projects": [
+        {
+            "name": "syllabifi",
+            "techstack": "gTTS, eng-syl, openai, whisper",
+            "description": "A tool to process audio into fine-grained segments for linguistic and speech analysis.",
+            "link": "https://github.com/pinktownscavenger/syllabifi"
+        },
+        {
+            "name": "predictive-fleet-care",
+            "techstack": "sklearn, numPy, seaborn, pandas",
+            "description": "Predict maintenance needs for trucks using ML techniques and historical data, aiming to reduce unplanned downtimes.",
+            "link": "https://github.com/pinktownscavenger/predictive-fleet-care"
+        },
+        {
+            "name": "cmapss-predictive-maintenance",
+            "techstack": "keras, sklearn, seaborn, eda",
+            "description": "Maintenance pipeline using IoT sensor data from the CMAPSSData dataset to predict the Remaining Useful Life (RUL) of engines.",
+            "link": "https://github.com/pinktownscavenger/cmapss-predictive-maintenance"
+        }
+    ]
+}

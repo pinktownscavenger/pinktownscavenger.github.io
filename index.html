@@ -7,13 +7,7 @@
     <title>
         Portfolio
     </title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
-        rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -24,33 +18,33 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar">
         <a class="navbar-brand" href="#">
-            <img alt="Logo" class="d-inline-block align-top" height="45" src="./images/logo.png" width="45" />
+            <img alt="Logo" height="45" src="./images/logo.png" width="45" />
         </a>
         <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-            data-target="#navbarNav" data-toggle="collapse" type="button">
+            type="button">
             <span class="navbar-toggler-icon">
             </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li>
                     <a class="nav-link" href="#home">
                         home
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="#articles">
                         articles
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="#projects">
                         projects
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" download="resume.pdf" href="./assets/resume.pdf" id="download-btn">
                         resume
                     </a>
@@ -80,35 +74,6 @@
                 Articles
             </h2>
             <ul class="article-list">
-                <li>
-                    <a href="https://www.linkedin.com/pulse/graphrag-showdown-deepseek-vs-openai-bilal-malik-iq5lf/?trackingId=DigEZJw%2FQ1KKAmgGA2VTZQ%3D%3D"
-                        target="_blank">
-                        GraphRAG Showdown: DeepSeek vs. OpenAI
-                    </a>
-                    <span class="article-date">
-                        February 6, 2025
-                    </span>
-                </li>
-                <hr class="articles-divider" />
-                <li>
-                    <a href="https://www.linkedin.com/pulse/graphrag-bridging-knowledge-graphs-generation-bilal-malik-yreyf/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
-                        target="_blank">
-                        Bridging Knowledge Graphs with Retrieval-Augmented Generation
-                    </a>
-                    <span class="article-date">
-                        November 11, 2024
-                    </span>
-                </li>
-                <hr class="articles-divider" />
-                <li>
-                    <a href="https://www.linkedin.com/pulse/integrating-cosmos-db-gremlin-visualizer-enhancing-graph-bilal-malik-mwpof/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
-                        target="_blank">
-                        Integrating Cosmos DB into Gremlin-Visualizer
-                    </a>
-                    <span class="article-date">
-                        September 23, 2024
-                    </span>
-                </li>
             </ul>
         </section>
 
@@ -117,69 +82,6 @@
                 Projects
             </h2>
             <ul class="project-list">
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/pinktownscavenger/syllabifi" target="_blank">
-                            syllabifi
-                        </a>
-                        <span class="project-techstack">
-                            gTTS, eng-syl, openai, whisper
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        A tool to process audio into fine-grained segments for linguistic and speech analysis.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/pinktownscavenger/predictive-fleet-care" target="_blank">
-                            predictive-fleet-care
-                        </a>
-                        <span class="project-techstack">
-                            sklearn, numPy, seaborn, pandas
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Predict maintenance needs for trucks using ML techniques and historical data, aiming to reduce
-                        unplanned downtimes.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/pinktownscavenger/cmapss-predictive-maintenance" target="_blank">
-                            cmapss-predictive-maintenance
-                        </a>
-                        <span class="project-techstack">
-                            keras, sklearn, seaborn, eda
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Maintenance pipeline using IoT sensor data from the CMAPSSData dataset to predict the Remaining
-                        Useful Life (RUL) of engines.
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="discography">
-            <h2>Discography</h2>
-            <ul class="discography-list">
-                <li class="discography-card">
-                    <a href="https://soundcloud.com/b6ilal/loverboy" target="_blank"><img class="discography-poster"
-                            src="https://i1.sndcdn.com/artworks-DrVhQznOHD6wFCQy-mfOrOQ-t1080x1080.jpg" alt=""></a>
-                </li>
-                <li class="discography-card">
-                    <a href="https://soundcloud.com/b6ilal/afternoon-heart" target="_blank"><img
-                            class="discography-poster"
-                            src="https://i1.sndcdn.com/artworks-oVyW2fbxR8VcCeL0-tKZzdg-t1080x1080.jpg" alt=""></a>
-                </li>
-                <li class="discography-card">
-                    <a href="https://soundcloud.com/b6ilal/sets/is-it-any-good" target="_blank"><img
-                            class="discography-poster"
-                            src="https://i1.sndcdn.com/artworks-rgjFRGJtVRGqNJqz-aZsWdA-t1080x1080.jpg" alt=""></a>
-                </li>
             </ul>
         </section>
 
@@ -191,57 +93,26 @@
         </section>
     </div>
 
-    <footer class="text-center py-4 text-light icons">
+    <footer class="icons">
         <div class="icon-container">
-            <a class="text-light mx-2" href="https://github.com/pinktownscavenger" target="_blank">
+            <a aria-label="GitHub" href="https://github.com/pinktownscavenger" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-github fa-lg">
                 </i>
             </a>
-            <a class="text-light mx-2" href="https://www.linkedin.com/in/bilalmalik01" target="_blank">
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/bilalmalik01" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-linkedin fa-lg">
                 </i>
             </a>
-            <a class="text-light mx-2" href="mailto:bilalmalik1548@gmail.com">
+            <a aria-label="Email" href="mailto:bilalmalik1548@gmail.com">
                 <i class="fas fa-envelope fa-lg">
                 </i>
             </a>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-    </script>
-
-
-    <script>
-        fetch('assets/movies.json')
-            .then(response => response.json())
-            .then(movies => {
-                const movieList = document.querySelector('.movie-list');
-                movieList.innerHTML = '';
-
-                movies.forEach(movie => {
-                    const li = document.createElement('li');
-                    li.classList.add('movie-card');
-
-                    const a = document.createElement('a');
-                    a.href = movie.link;
-                    a.target = '_blank';
-
-                    const img = document.createElement('img');
-                    img.src = movie.poster;
-                    img.alt = 'Movie Poster';
-                    img.classList.add('movie-poster');
-
-                    a.appendChild(img);
-                    li.appendChild(a);
-                    movieList.appendChild(li);
-                });
-            })
-            .catch(error => console.error('Error loading movies:', error));
+    <script src="js/main.js">
     </script>
 
 </body>
