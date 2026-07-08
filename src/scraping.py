@@ -3,7 +3,6 @@ import json
 import feedparser
 from bs4 import BeautifulSoup
 
-index_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../index.html")
 movies_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../assets/movies.json")
 
 rss_url = "https://letterboxd.com/pinktownscvngr/rss/"
@@ -19,10 +18,11 @@ for entry in feed.entries[:4]:
         title, _ = full_title, "Unknown Year"
 
     link = entry.link
-    
+
     description_html = entry.description
     soup = BeautifulSoup(description_html, "html.parser")
-    poster_image = soup.find("img")["src"] if soup.find("img") else ""
+    poster = soup.find("img")
+    poster_image = poster.get("src", "") if poster else ""
 
     recent_movies.append({
         "title": f"{title}",
