@@ -21,14 +21,15 @@ body {
 }
 
 .container {
-    max-width: 55%;
+    max-width: 980px;
     margin: 0 auto;
     /* padding: 0 2rem; */
 }
 
 /* Navbar */
 .navbar {
-    width: 55%;
+    width: 100%;
+    max-width: 980px;
     margin: auto;
     /* padding: 0 2rem; */
     padding-left: 15px;
@@ -41,10 +42,13 @@ body {
 }
 
 .nav-link {
+    display: flex;
+    align-items: center;
     color: wheat;
     opacity: 80%;
     text-decoration: none;
     font-size: 1.15rem;
+    line-height: 1.2;
     margin: 0.5rem;
     transition: opacity 0.3s ease, color 0s ease;
 }
@@ -75,6 +79,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     margin-top: 6rem;
 }
 
@@ -98,17 +103,18 @@ body {
 }
 
 .intro-text h1 {
-    font-size: 6.5rem;
+    font-size: clamp(4.5rem, 7.5vw, 6.5rem);
     font-family: "Playfair Display", serif;
     font-weight: 600;
     letter-spacing: 0.1rem;
     color: wheat;
+    white-space: nowrap;
 }
 
 .intro-image {
     max-width: 100%;
     height: auto;
-    width: 15rem;
+    width: clamp(12rem, 18vw, 15rem);
     margin-right: 2rem;
 }
 
@@ -179,6 +185,97 @@ body {
     margin-top: 0.2rem;
 }
 
+/* Experience Section */
+
+#experience {
+    margin-top: 5rem;
+    color: wheat;
+}
+
+#experience h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-list li {
+    margin-bottom: 0.5rem;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.experience-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.experience-role {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.04rem;
+    color: wheat;
+    font-size: 1.1rem;
+    opacity: 80%;
+    transition: none;
+}
+
+.experience-list a {
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.04rem;
+    color: wheat;
+    font-size: 1.1rem;
+    opacity: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.experience-list a:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.experience-separator {
+    color: wheat;
+    opacity: 35%;
+    transition: none;
+}
+
+.experience-date {
+    flex-shrink: 0;
+    color: wheat;
+    font-size: 0.9rem;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    opacity: 40%;
+    transition: none;
+}
+
+.experience-description {
+    font-family: "Merriweather", serif;
+    color: wheat;
+    font-size: 0.9rem;
+    opacity: 30%;
+    transition: none;
+}
+
+.experience-divider {
+    border: 1px solid wheat;
+    opacity: 0.05;
+    margin-top: 0.2rem;
+}
+
 /* Projects Section */
 
 #projects {
@@ -202,7 +299,7 @@ body {
 }
 
 .project-list li:hover {
-    cursor: pointer;
+    cursor: default;
 }
 
 .project-list a {
@@ -213,12 +310,11 @@ body {
     font-size: 1.10rem;
     letter-spacing: 0.04rem;
     opacity: 80%;
-    transition: opacity 0.3s ease, font-size 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .project-list li:hover a {
-    opacity: 90%;
-    /* font-size: 1.11rem; */
+    opacity: 84%;
 }
 
 .project-header {
@@ -235,12 +331,11 @@ body {
     font-style: italic;
     margin-left: 1rem;
     opacity: 40%;
-    transition: opacity 0.3s ease, font-size 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .project-list li:hover .project-techstack {
-    opacity: 60%;
-    /* font-size: 0.91rem; */
+    opacity: 48%;
 }
 
 .project-description {
@@ -248,12 +343,11 @@ body {
     color: wheat;
     font-size: 0.9rem;
     opacity: 30%;
-    transition: opacity 0.3s ease, font-size 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .project-list li:hover .project-description {
-    opacity: 65%;
-    /* font-size: 0.91rem; */
+    opacity: 38%;
 }
 
 .projects-divider {
@@ -413,6 +507,7 @@ footer {
     .intro-text h1 {
         font-size: 5.5rem;
         letter-spacing: 0.1rem;
+        white-space: normal;
     }
 
     .intro-image {
@@ -440,6 +535,35 @@ footer {
     .article-date{
         font-size: 0.70rem;
         margin-left: 0rem;
+    }
+
+    #experience {
+        margin-top: 3rem;
+    }
+
+    #experience h2{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .experience-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .experience-role,
+    .experience-list a {
+        font-size: 0.85rem;
+    }
+
+    .experience-date {
+        font-size: 0.70rem;
+    }
+
+    .experience-description{
+        font-size: 0.8rem;
     }
 
     #projects {

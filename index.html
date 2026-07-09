@@ -8,7 +8,7 @@
         Portfolio
     </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css?v=5" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -41,13 +41,18 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#articles">
-                        articles
+                    <a class="nav-link" href="#experience">
+                        experience
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">
                         projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#articles">
+                        articles
                     </a>
                 </li>
                 <li class="nav-item">
@@ -69,10 +74,170 @@
                     </span>
                 </h5>
                 <h1>
-                    I code.
+                    I model data.
                 </h1>
             </div>
             <img alt="Your Image" class="intro-image" src="./images/desktop.png" />
+        </section>
+
+        <section id="experience">
+            <h2>
+                Experience
+            </h2>
+            <ul class="experience-list">
+                <li>
+                    <div class="experience-header">
+                        <span class="experience-title">
+                            <span class="experience-role">
+                                Jr. Data Scientist
+                            </span>
+                            <span class="experience-separator">
+                                |
+                            </span>
+                            <a href="https://www.theaisystems.com/" target="_blank">
+                                AI Systems
+                            </a>
+                        </span>
+                        <span class="experience-date">
+                            August 2024 - May 2025
+                        </span>
+                    </div>
+                    <p class="experience-description">
+                        Modeled 8k+ healthcare entity relationships in Azure Cosmos DB and ran time-series analysis
+                        across 5k+ legal queries to detect emerging regulatory trends.
+                    </p>
+                </li>
+                <hr class="experience-divider" />
+                <li>
+                    <div class="experience-header">
+                        <span class="experience-title">
+                            <span class="experience-role">
+                                Data Analyst
+                            </span>
+                            <span class="experience-separator">
+                                |
+                            </span>
+                            <a href="https://carvangoods.com.pk/" target="_blank">
+                                Carvan Goods Transport
+                            </a>
+                        </span>
+                        <span class="experience-date">
+                            January 2024 - June 2024
+                        </span>
+                    </div>
+                    <p class="experience-description">
+                        Automated fleet and delivery dashboards for real-time visibility, and forecasted shipment demand
+                        from 48+ months of historical data.
+                    </p>
+                </li>
+                <hr class="experience-divider" />
+                <li>
+                    <div class="experience-header">
+                        <span class="experience-title">
+                            <span class="experience-role">
+                                Data Science Intern
+                            </span>
+                            <span class="experience-separator">
+                                |
+                            </span>
+                            <a href="https://www.ubldigital.com/" target="_blank">
+                                United Bank Limited (UBL)
+                            </a>
+                        </span>
+                        <span class="experience-date">
+                            June 2023 - August 2023
+                        </span>
+                    </div>
+                    <p class="experience-description">
+                        Built a computer vision model for cheque fraud detection, reaching 83% validation accuracy after
+                        expanding the training set from 4k to 14k images.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>
+                Projects
+            </h2>
+            <ul class="project-list">
+                <li>
+                    <div class="project-header">
+                        <a href="https://github.com/dsan-5300/2026-project-2026-13" target="_blank">
+                            Hospital Readmission Prediction
+                        </a>
+                        <span class="project-techstack">
+                            Python, XGBoost, Lasso, Random Forest
+                        </span>
+                    </div>
+                    <p class="project-description">
+                        Predicted 30-day readmission and length of stay across 100k+ inpatient encounters using the
+                        Diabetes 130-US Hospitals dataset (AUC = 0.649, RMSE = 2.17 days).
+                    </p>
+                </li>
+                <hr class="projects-divider" />
+                <li>
+                    <div class="project-header">
+                        <a href="https://medium.com/@bilalmalik1548/teaching-machines-to-read-complaints-when-the-data-refuses-to-behave-9057a31ba201" target="_blank">
+                            CFPB Complaint Modeling &amp; Classification
+                        </a>
+                        <span class="project-techstack">
+                            Python, XGBoost, Regression, Clustering
+                        </span>
+                    </div>
+                    <p class="project-description">
+                        Modeled socioeconomic disparities in consumer complaints by combining CFPB, ACS, and postal
+                        data, reaching 0.77 multiclass accuracy and 0.93 F1 for high-priority complaint triage.
+                    </p>
+                </li>
+                <hr class="projects-divider" />
+                <li>
+                    <div class="project-header">
+                        <a href="#" target="_blank">
+                            Insaf.AI - Legal NLP Data Extraction
+                        </a>
+                        <span class="project-techstack">
+                            Python, NLP, OpenAI Agents SDK
+                        </span>
+                    </div>
+                    <p class="project-description">
+                        An NLP pipeline that extracts structured legal entities from free-text input to support
+                        automated First Information Report (FIR) drafting.
+                    </p>
+                </li>
+                <hr class="projects-divider" />
+                <li>
+                    <div class="project-header">
+                        <a href="./assets/molecular-property-prediction.pdf" target="_blank">
+                            Molecular Property Prediction
+                        </a>
+                        <span class="project-techstack">
+                            Python, PyTorch, PyTorch Geometric, GNN, SchNet, RDKit
+                        </span>
+                    </div>
+                    <p class="project-description">
+                        Predicted quantum chemical properties on the QM9 dataset (134k molecules) across five models of
+                        increasing complexity, cutting MAE 55% over the fingerprint baseline by incorporating 3D atomic
+                        geometry.
+                    </p>
+                </li>
+                <hr class="projects-divider" />
+                <li>
+                    <div class="project-header">
+                        <a href="https://malikg.georgetown.domains/DSAN5200/" target="_blank">
+                            Where Have All the Bands Gone?
+                        </a>
+                        <span class="project-techstack">
+                            Python, D3.js, Observable Plot, MusicBrainz API, Quarto
+                        </span>
+                    </div>
+                    <p class="project-description">
+                        A data journalism site tracing six decades of Billboard Hot 100 history across 340k+ chart
+                        entries and 11k+ artists, with 8 custom interactive visualizations built in D3.js and Observable
+                        Plot.
+                    </p>
+                </li>
+            </ul>
         </section>
 
         <section id="articles">
@@ -112,57 +277,6 @@
             </ul>
         </section>
 
-        <section id="projects">
-            <h2>
-                Projects
-            </h2>
-            <ul class="project-list">
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/pinktownscavenger/syllabifi" target="_blank">
-                            syllabifi
-                        </a>
-                        <span class="project-techstack">
-                            gTTS, eng-syl, openai, whisper
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        A tool to process audio into fine-grained segments for linguistic and speech analysis.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/pinktownscavenger/predictive-fleet-care" target="_blank">
-                            predictive-fleet-care
-                        </a>
-                        <span class="project-techstack">
-                            sklearn, numPy, seaborn, pandas
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Predict maintenance needs for trucks using ML techniques and historical data, aiming to reduce
-                        unplanned downtimes.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/pinktownscavenger/cmapss-predictive-maintenance" target="_blank">
-                            cmapss-predictive-maintenance
-                        </a>
-                        <span class="project-techstack">
-                            keras, sklearn, seaborn, eda
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Maintenance pipeline using IoT sensor data from the CMAPSSData dataset to predict the Remaining
-                        Useful Life (RUL) of engines.
-                    </p>
-                </li>
-            </ul>
-        </section>
-
         <section id="discography">
             <h2>Discography</h2>
             <ul class="discography-list">
@@ -184,7 +298,7 @@
         </section>
 
         <section id="movies">
-            <h2>Recent Letterboxd</h2>
+            <h2>Recently Watched</h2>
             <ul class="movie-list">
                 <!-- Movie cards will be dynamically inserted here by JavaScript -->
             </ul>
