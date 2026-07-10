@@ -16,24 +16,59 @@
             "link": "https://www.linkedin.com/pulse/integrating-cosmos-db-gremlin-visualizer-enhancing-graph-bilal-malik-mwpof/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
         }
     ],
+    "experience": [
+        {
+            "role": "Jr. Data Scientist",
+            "company": "AI Systems",
+            "companyLink": "https://www.theaisystems.com/",
+            "date": "August 2024 - May 2025",
+            "description": "Modeled 8k+ healthcare entity relationships in Azure Cosmos DB and ran time-series analysis across 5k+ legal queries to detect emerging regulatory trends."
+        },
+        {
+            "role": "Data Analyst",
+            "company": "Carvan Goods Transport",
+            "companyLink": "https://carvangoods.com.pk/",
+            "date": "January 2024 - June 2024",
+            "description": "Automated fleet and delivery dashboards for real-time visibility, and forecasted shipment demand from 48+ months of historical data."
+        },
+        {
+            "role": "Data Science Intern",
+            "company": "United Bank Limited (UBL)",
+            "companyLink": "https://www.ubldigital.com/",
+            "date": "June 2023 - August 2023",
+            "description": "Built a computer vision model for cheque fraud detection, reaching 83% validation accuracy after expanding the training set from 4k to 14k images."
+        }
+    ],
     "projects": [
         {
-            "name": "syllabifi",
-            "techstack": "gTTS, eng-syl, openai, whisper",
-            "description": "A tool to process audio into fine-grained segments for linguistic and speech analysis.",
-            "link": "https://github.com/pinktownscavenger/syllabifi"
+            "name": "Hospital Readmission Prediction",
+            "techstack": "Python, XGBoost, Lasso, Random Forest",
+            "description": "Predicted 30-day readmission and length of stay across 100k+ inpatient encounters using the Diabetes 130-US Hospitals dataset (AUC = 0.649, RMSE = 2.17 days).",
+            "link": "https://github.com/dsan-5300/2026-project-2026-13"
         },
         {
-            "name": "predictive-fleet-care",
-            "techstack": "sklearn, numPy, seaborn, pandas",
-            "description": "Predict maintenance needs for trucks using ML techniques and historical data, aiming to reduce unplanned downtimes.",
-            "link": "https://github.com/pinktownscavenger/predictive-fleet-care"
+            "name": "CFPB Complaint Modeling & Classification",
+            "techstack": "Python, XGBoost, Regression, Clustering",
+            "description": "Modeled socioeconomic disparities in consumer complaints by combining CFPB, ACS, and postal data, reaching 0.77 multiclass accuracy and 0.93 F1 for high-priority complaint triage.",
+            "link": "https://medium.com/@bilalmalik1548/teaching-machines-to-read-complaints-when-the-data-refuses-to-behave-9057a31ba201"
         },
         {
-            "name": "cmapss-predictive-maintenance",
-            "techstack": "keras, sklearn, seaborn, eda",
-            "description": "Maintenance pipeline using IoT sensor data from the CMAPSSData dataset to predict the Remaining Useful Life (RUL) of engines.",
-            "link": "https://github.com/pinktownscavenger/cmapss-predictive-maintenance"
+            "name": "Insaf.AI - Legal NLP Data Extraction",
+            "techstack": "Python, NLP, OpenAI Agents SDK",
+            "description": "An NLP pipeline that extracts structured legal entities from free-text input to support automated First Information Report (FIR) drafting.",
+            "link": "#"
+        },
+        {
+            "name": "Molecular Property Prediction",
+            "techstack": "Python, PyTorch, PyTorch Geometric, GNN, SchNet, RDKit",
+            "description": "Predicted quantum chemical properties on the QM9 dataset (134k molecules) across five models of increasing complexity, cutting MAE 55% over the fingerprint baseline by incorporating 3D atomic geometry.",
+            "link": "./assets/molecular-property-prediction.pdf"
+        },
+        {
+            "name": "Where Have All the Bands Gone?",
+            "techstack": "Python, D3.js, Observable Plot, MusicBrainz API, Quarto",
+            "description": "A data journalism site tracing six decades of Billboard Hot 100 history across 340k+ chart entries and 11k+ artists, with 8 custom interactive visualizations built in D3.js and Observable Plot.",
+            "link": "https://malikg.georgetown.domains/DSAN5200/"
         }
     ]
 }

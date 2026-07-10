@@ -11,8 +11,51 @@ function createExternalLink(href, text) {
     const link = document.createElement('a');
     link.href = href;
     link.textContent = text;
-    applyExternalLinkOptions(link);
+
+    if (href !== '#') {
+        applyExternalLinkOptions(link);
+    }
+
     return link;
+}
+
+function renderExperience(experience) {
+    const experienceList = document.querySelector('.experience-list');
+    experienceList.innerHTML = '';
+
+    experience.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.className = 'list-item experience-item';
+
+        const header = document.createElement('div');
+        header.className = 'experience-header';
+
+        const title = document.createElement('span');
+        title.className = 'experience-title';
+
+        const role = document.createElement('span');
+        role.className = 'experience-role';
+        role.textContent = item.role;
+
+        const separator = document.createElement('span');
+        separator.className = 'experience-separator';
+        separator.textContent = '|';
+
+        const company = createExternalLink(item.companyLink, item.company);
+
+        const date = document.createElement('span');
+        date.className = 'experience-date';
+        date.textContent = item.date;
+
+        const description = document.createElement('p');
+        description.className = 'experience-description';
+        description.textContent = item.description;
+
+        title.append(role, separator, company);
+        header.append(title, date);
+        listItem.append(header, description);
+        experienceList.appendChild(listItem);
+    });
 }
 
 function renderArticles(articles) {
@@ -108,11 +151,12 @@ async function init() {
     setupNavToggle();
 
     try {
-        const [{ articles, projects }, movies] = await Promise.all([
+        const [{ articles, experience, projects }, movies] = await Promise.all([
             loadJson('assets/content.json'),
             loadJson('assets/movies.json')
         ]);
 
+        renderExperience(experience);
         renderArticles(articles);
         renderProjects(projects);
         renderMovies(movies);

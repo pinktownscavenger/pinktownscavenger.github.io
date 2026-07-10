@@ -12,7 +12,7 @@
     --resume-hover: yellow;
     --serif-display: "Playfair Display", serif;
     --serif-body: "Merriweather", serif;
-    --content-width: 900px;
+    --content-width: 980px;
 }
 
 html {
@@ -100,6 +100,7 @@ ul {
 #home {
     display: flex;
     align-items: center;
+    gap: 2rem;
     justify-content: space-between;
     margin-top: 6rem;
 }
@@ -129,13 +130,14 @@ ul {
 .intro-text h1 {
     color: var(--text);
     font-family: var(--serif-display);
-    font-size: 6.5rem;
+    font-size: clamp(4.5rem, 7.5vw, 6.5rem);
     font-weight: 600;
     letter-spacing: 0.1rem;
+    white-space: nowrap;
 }
 
 .intro-image {
-    width: 15rem;
+    width: clamp(12rem, 18vw, 15rem);
     max-width: 100%;
     height: auto;
     margin-right: 2rem;
@@ -157,6 +159,7 @@ section h2 {
 }
 
 .article-list,
+.experience-list,
 .project-list {
     padding: 0;
 }
@@ -179,7 +182,8 @@ section h2 {
     transition: opacity 0.3s ease;
 }
 
-.list-item:hover a,
+.article-item:hover a,
+.project-item:hover a,
 .list-item a:focus-visible {
     opacity: 0.9;
 }
@@ -207,9 +211,57 @@ section h2 {
     margin-left: 1rem;
 }
 
-.list-item:hover .article-date,
-.list-item:hover .project-techstack {
+.list-item:hover .article-date {
     opacity: 0.6;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.experience-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.experience-role,
+.experience-item a {
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+}
+
+.experience-role {
+    opacity: 0.8;
+}
+
+.experience-item a:hover,
+.experience-item a:focus-visible {
+    opacity: 0.9;
+}
+
+.experience-separator {
+    opacity: 0.35;
+}
+
+.experience-date {
+    flex-shrink: 0;
+    color: var(--text);
+    font-family: var(--serif-body);
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+.experience-description {
+    color: var(--text);
+    font-size: 0.9rem;
+    opacity: 0.3;
 }
 
 .project-header {
@@ -228,6 +280,14 @@ section h2 {
     margin-left: 1rem;
 }
 
+.list-item:hover .project-header a {
+    opacity: 0.84;
+}
+
+.list-item:hover .project-techstack {
+    opacity: 0.48;
+}
+
 .project-description {
     color: var(--text);
     font-size: 0.9rem;
@@ -236,7 +296,7 @@ section h2 {
 }
 
 .list-item:hover .project-description {
-    opacity: 0.65;
+    opacity: 0.38;
 }
 
 /* Movies */
@@ -294,6 +354,7 @@ footer {
 @media (max-width: 760px) {
     .intro-text h1 {
         font-size: 5.5rem;
+        white-space: normal;
     }
 
     .intro-image {
@@ -375,6 +436,7 @@ footer {
     }
 
     .article-item,
+    .experience-header,
     .project-header {
         display: block;
     }
@@ -384,10 +446,24 @@ footer {
     }
 
     .article-date,
+    .experience-date,
     .project-techstack {
         display: block;
         margin-left: 0;
         font-size: 0.7rem;
+    }
+
+    .experience-role,
+    .experience-item a {
+        font-size: 0.85rem;
+    }
+
+    .experience-date {
+        margin-top: 0.25rem;
+    }
+
+    .experience-description {
+        font-size: 0.8rem;
     }
 
     .project-techstack {
