@@ -1,210 +1,218 @@
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 :root {
-    --gray-10: #181818;
-    --gray-9: #1f1f1f;
-    --gray-65: #525252;
+    --bg: #181818;
+    --panel: #1f1f1f;
+    --text: wheat;
+    --resume: rgb(220, 220, 107);
+    --resume-hover: yellow;
+    --serif-display: "Playfair Display", serif;
+    --serif-body: "Merriweather", serif;
+    --content-width: 980px;
 }
 
-html,
-body {
-    height: 100%;
-    background-color: var(--gray-10);
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+    min-height: 100%;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
-.container {
-    max-width: 980px;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container,
+.navbar {
+    width: min(calc(100% - 2rem), var(--content-width));
     margin: 0 auto;
-    /* padding: 0 2rem; */
 }
 
 /* Navbar */
 .navbar {
-    width: 100%;
-    max-width: 980px;
-    margin: auto;
-    /* padding: 0 2rem; */
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 1.5rem;
 }
 
+.navbar-brand img {
+    display: block;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-toggler {
+    display: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="wheat" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
 }
 
 .nav-link {
-    display: flex;
-    align-items: center;
-    color: wheat;
-    opacity: 80%;
-    text-decoration: none;
+    color: var(--text);
     font-size: 1.15rem;
-    line-height: 1.2;
-    margin: 0.5rem;
-    transition: opacity 0.3s ease, color 0s ease;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
-.nav-link:hover {
-    /* color: white; */
-    color: wheat;
-    opacity: 90%;
-    /* letter-spacing: 0.02rem; */
+.nav-link:hover,
+.nav-link:focus-visible {
+    opacity: 0.9;
 }
 
-#download-btn{
-    color: rgb(220, 220, 107);
-    transition: color 0.3s ease;
+#download-btn {
+    color: var(--resume);
+    font-family: var(--serif-display);
     font-style: italic;
-    font-family: "Playfair Display", serif;
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-#download-btn:hover {
-    color: yellow;
-    opacity: 90%;
+#download-btn:hover,
+#download-btn:focus-visible {
+    color: var(--resume-hover);
 }
 
-/* CONTENT */
-
+/* Content */
 #home {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    justify-content: space-between;
     margin-top: 6rem;
+}
+
+.intro-text {
+    margin-left: 2rem;
+}
+
+.intro-text h5,
+.list-item,
+.project-description {
+    font-family: var(--serif-body);
 }
 
 .intro-text h5 {
     font-size: 1.1rem;
-    font-family: "Merriweather", serif;
-    color: wheat;
-    opacity: 70%;
+    opacity: 0.7;
     word-spacing: 0.1rem;
 }
 
-.intro-text {
-    display: block;
-    margin-left: 2rem;
-}
-
 .intro-text h5 #highlight {
-    opacity: 100%;
-    font-weight: 700;
     font-size: 1.3rem;
+    font-weight: 700;
+    opacity: 1;
 }
 
 .intro-text h1 {
+    color: var(--text);
+    font-family: var(--serif-display);
     font-size: clamp(4.5rem, 7.5vw, 6.5rem);
-    font-family: "Playfair Display", serif;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    color: wheat;
     white-space: nowrap;
 }
 
 .intro-image {
+    width: clamp(12rem, 18vw, 15rem);
     max-width: 100%;
     height: auto;
-    width: clamp(12rem, 18vw, 15rem);
     margin-right: 2rem;
 }
 
-.gif-container {
-    display: none;
+section:not(#home) {
+    margin-top: 5rem;
 }
 
-/* Articles Section */
-
-#articles {
-    margin-top: 5rem;
-    color: wheat;
+section h2 {
+    margin-bottom: 2rem;
+    font-family: var(--serif-body);
+    font-size: 2rem;
 }
 
 #articles h2 {
-    font-family: "Playfair Display", serif;
+    font-family: var(--serif-display);
     letter-spacing: 0.05rem;
-    font-size: 2rem;
-    margin-bottom: 2rem;
 }
 
-.article-list {
-    list-style: none;
+.article-list,
+.experience-list,
+.project-list {
     padding: 0;
 }
 
-.article-list li {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+.list-item {
+    border-bottom: 1px solid rgb(245 222 179 / 5%);
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 
-.article-list li:hover {
-    cursor: pointer;
+.list-item:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
 }
 
-.article-list a {
-    text-decoration: none;
-    font-family: "Merriweather", serif;
+.list-item a {
+    color: var(--text);
     letter-spacing: 0.05rem;
-    color: wheat;
-    font-size: 1.05rem;
-    opacity: 80%;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
-.article-list li:hover a {
-    opacity: 90%;
+.article-item:hover a,
+.project-item:hover a,
+.list-item a:focus-visible {
+    opacity: 0.9;
+}
+
+.article-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-item a {
+    font-size: 1.05rem;
+}
+
+.article-date,
+.project-techstack {
+    color: var(--text);
+    font-family: var(--serif-body);
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
 }
 
 .article-date {
-    color: wheat;
-    font-family: "Merriweather", serif;
-    font-style: italic;
-    font-size: 0.9rem;
     margin-left: 1rem;
-    opacity: 40%;
-    transition: opacity 0.3s ease;
 }
 
-.article-list li:hover .article-date {
-    opacity: 60%;
-}
-
-.articles-divider {
-    border: 1px solid wheat;
-    opacity: 0.05;
-    margin-top: 0.2rem;
-}
-
-/* Experience Section */
-
-#experience {
-    margin-top: 5rem;
-    color: wheat;
-}
-
-#experience h2 {
-    font-family: "Merriweather", serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.experience-list {
-    list-style: none;
-    padding: 0;
-}
-
-.experience-list li {
-    margin-bottom: 0.5rem;
+.list-item:hover .article-date {
+    opacity: 0.6;
 }
 
 .experience-header {
@@ -222,277 +230,178 @@ body {
     gap: 0.35rem;
 }
 
+.experience-role,
+.experience-item a {
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+}
+
 .experience-role {
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.04rem;
-    color: wheat;
-    font-size: 1.1rem;
-    opacity: 80%;
-    transition: none;
+    opacity: 0.8;
 }
 
-.experience-list a {
-    text-decoration: none;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.04rem;
-    color: wheat;
-    font-size: 1.1rem;
-    opacity: 80%;
-    transition: opacity 0.3s ease;
-}
-
-.experience-list a:hover {
-    cursor: pointer;
-    opacity: 90%;
+.experience-item a:hover,
+.experience-item a:focus-visible {
+    opacity: 0.9;
 }
 
 .experience-separator {
-    color: wheat;
-    opacity: 35%;
-    transition: none;
+    opacity: 0.35;
 }
 
 .experience-date {
     flex-shrink: 0;
-    color: wheat;
+    color: var(--text);
+    font-family: var(--serif-body);
     font-size: 0.9rem;
-    font-family: "Merriweather", serif;
     font-style: italic;
-    opacity: 40%;
-    transition: none;
+    opacity: 0.4;
 }
 
 .experience-description {
-    font-family: "Merriweather", serif;
-    color: wheat;
+    color: var(--text);
     font-size: 0.9rem;
-    opacity: 30%;
-    transition: none;
-}
-
-.experience-divider {
-    border: 1px solid wheat;
-    opacity: 0.05;
-    margin-top: 0.2rem;
-}
-
-/* Projects Section */
-
-#projects {
-    margin-top: 5rem;
-    color: wheat;
-}
-
-#projects h2 {
-    font-family: "Merriweather", serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.project-list {
-    list-style: none;
-    padding: 0;
-}
-
-.project-list li {
-    margin-bottom: 0.5rem;
-}
-
-.project-list li:hover {
-    cursor: default;
-}
-
-.project-list a {
-    text-decoration: none;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.05rem;
-    color: wheat;
-    font-size: 1.10rem;
-    letter-spacing: 0.04rem;
-    opacity: 80%;
-    transition: opacity 0.3s ease;
-}
-
-.project-list li:hover a {
-    opacity: 84%;
+    opacity: 0.3;
 }
 
 .project-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 0.4rem;
 }
 
-.project-techstack {
-    color: wheat;
-    font-size: 0.9rem;
-    font-family: "Merriweather", serif;
-    font-style: italic;
-    margin-left: 1rem;
-    opacity: 40%;
-    transition: opacity 0.3s ease;
+.project-header a {
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
 }
 
-.project-list li:hover .project-techstack {
-    opacity: 48%;
+.project-techstack {
+    margin-left: 1rem;
+}
+
+.list-item:hover .project-header a {
+    opacity: 0.84;
+}
+
+.list-item:hover .project-techstack {
+    opacity: 0.48;
 }
 
 .project-description {
-    font-family: "Merriweather", serif;
-    color: wheat;
+    color: var(--text);
     font-size: 0.9rem;
-    opacity: 30%;
+    opacity: 0.3;
     transition: opacity 0.3s ease;
 }
 
-.project-list li:hover .project-description {
-    opacity: 38%;
+.list-item:hover .project-description {
+    opacity: 0.38;
 }
 
-.projects-divider {
-    border: 1px solid wheat;
-    opacity: 0.05;
-    margin-top: 0.2rem;
-}
-
-/* DISCOGRAPHY */
-
-#discography {
-    margin-top: 5rem;
-    color: wheat;
-}
-
-#discography h2 {
-    font-family: "Merriweather", serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.discography-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
-    padding: 0;
-    list-style: none;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.discography-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--gray-9);
-    border-radius: 8px;
-    padding: 0.8rem;
-    overflow: hidden;
-}
-
-.discography-poster {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-.discography-card a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* MOVIES */
-
-#movies {
-    margin-top: 5rem;
-    color: wheat;
-}
-
-#movies h2 {
-    font-family: "Merriweather", serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
+/* Movies */
 .movie-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
-    padding: 0;
-    list-style: none;
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.movie-card {
+.media-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--gray-9);
-    border-radius: 8px;
     padding: 0.8rem;
     overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--panel);
 }
 
-.movie-poster {
+.media-poster {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.movie-title {
-    font-family: "Merriweather", serif;
-    font-size: 1rem;
-    color: wheat;
-    margin-top: 0.7rem;
-    margin-bottom: 0rem;
-    opacity: 80%;
-    text-align: center;
-}
-
-.movie-card a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* FOOTER */
-
+/* Footer */
 footer {
-    position: relative;
-    bottom: 0;
     width: 100%;
-    text-align: center;
-    background-color: var(--gray-10);
-    padding: 1rem 0;
     margin-top: 4rem;
+    padding: 1rem 0;
+    background-color: var(--bg);
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .icons a {
-    color: wheat !important;
-    transition: color 0.3s ease !important;
+    color: var(--text);
+    transition: color 0.3s ease;
 }
 
-.icons a:hover {
-    color: white !important;
+.icons a:hover,
+.icons a:focus-visible {
+    color: white;
 }
 
-/* RESPONSIVENESS */
+/* Responsiveness */
+@media (max-width: 760px) {
+    .intro-text h1 {
+        font-size: 5.5rem;
+        white-space: normal;
+    }
+
+    .intro-image {
+        width: 12rem;
+    }
+}
+
 @media (max-width: 576px) {
     .navbar {
-        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        display: block;
+        margin-top: 0.4rem;
+    }
+
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+        text-align: right;
+    }
+
+    .navbar-collapse.is-open {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.6rem;
     }
 
     .nav-link {
         font-size: 1rem;
     }
 
-    .container {
-        max-width: 100%;
+    #home {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3rem;
     }
 
-    #home {
-        margin-top: 3rem;
-        flex-direction: column;
-        align-items: normal;
+    .intro-text {
+        margin-left: 2rem;
     }
 
     .intro-text h5 {
@@ -506,146 +415,85 @@ footer {
 
     .intro-text h1 {
         font-size: 5.5rem;
-        letter-spacing: 0.1rem;
-        white-space: normal;
     }
 
     .intro-image {
         display: none;
     }
 
-    #articles {
+    section:not(#home) {
         margin-top: 3rem;
     }
 
-    #articles h2{
+    section h2 {
+        margin-bottom: 1.5rem;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    #articles h2 {
         margin-bottom: 1.9rem;
     }
 
-    .article-list li{
-        flex-direction: column;
-    }
-
-    .article-list a{
-        font-size: 0.80rem;
-    }
-
-    .article-date{
-        font-size: 0.70rem;
-        margin-left: 0rem;
-    }
-
-    #experience {
-        margin-top: 3rem;
-    }
-
-    #experience h2{
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .experience-header {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
-
-    .experience-role,
-    .experience-list a {
-        font-size: 0.85rem;
-    }
-
-    .experience-date {
-        font-size: 0.70rem;
-    }
-
-    .experience-description{
-        font-size: 0.8rem;
-    }
-
-    #projects {
-        margin-top: 3rem;
-    }
-
-    #projects h2{
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
+    .article-item,
+    .experience-header,
     .project-header {
         display: block;
     }
 
-    .project-list a{
-        font-size: 0.85rem;
-    }
-
-    .project-techstack {
-        margin-left: 0;
-        display: block;
-        text-align: left;
-        font-size: 0.70rem;
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .project-description{
+    .article-item a {
         font-size: 0.8rem;
     }
 
-    #movies {
-        margin-top: 3rem;
+    .article-date,
+    .experience-date,
+    .project-techstack {
+        display: block;
+        margin-left: 0;
+        font-size: 0.7rem;
     }
-    
-    #movies h2 {
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+
+    .experience-role,
+    .experience-item a {
+        font-size: 0.85rem;
     }
-    
+
+    .experience-date {
+        margin-top: 0.25rem;
+    }
+
+    .experience-description {
+        font-size: 0.8rem;
+    }
+
+    .project-techstack {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        text-align: left;
+    }
+
+    .project-header a {
+        font-size: 0.85rem;
+    }
+
+    .project-description {
+        font-size: 0.8rem;
+    }
+
     .movie-list {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 
-    .movie-card {
+    .media-card {
         padding: 0.4rem;
     }
 
-    .movie-poster {
+    .media-poster {
         max-width: 100px;
-        height: auto;
     }
 
-    #discography {
-        margin-top: 3rem;
-    }
-    
-    #discography h2 {
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .discography-list {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-
-    .discography-card {
-        padding: 0.4rem;
-    }
-
-    .discography-poster {
-        max-width: 100px;
-        height: auto;
-    }
-
-    footer{
+    footer {
         margin-top: 2rem;
     }
 }

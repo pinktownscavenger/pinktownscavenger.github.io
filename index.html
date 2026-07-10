@@ -7,13 +7,7 @@
     <title>
         Portfolio
     </title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css?v=5" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
-        rel="stylesheet" />
+    <link href="css/style.css?v=6" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -24,38 +18,38 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar">
         <a class="navbar-brand" href="#">
-            <img alt="Logo" class="d-inline-block align-top" height="45" src="./images/logo.png" width="45" />
+            <img alt="Logo" height="45" src="./images/logo.png" width="45" />
         </a>
         <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-            data-target="#navbarNav" data-toggle="collapse" type="button">
+            type="button">
             <span class="navbar-toggler-icon">
             </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li>
                     <a class="nav-link" href="#home">
                         home
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="#experience">
                         experience
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="#projects">
                         projects
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="#articles">
                         articles
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" download="resume.pdf" href="./assets/resume.pdf" id="download-btn">
                         resume
                     </a>
@@ -85,74 +79,6 @@
                 Experience
             </h2>
             <ul class="experience-list">
-                <li>
-                    <div class="experience-header">
-                        <span class="experience-title">
-                            <span class="experience-role">
-                                Jr. Data Scientist
-                            </span>
-                            <span class="experience-separator">
-                                |
-                            </span>
-                            <a href="https://www.theaisystems.com/" target="_blank">
-                                AI Systems
-                            </a>
-                        </span>
-                        <span class="experience-date">
-                            August 2024 - May 2025
-                        </span>
-                    </div>
-                    <p class="experience-description">
-                        Modeled 8k+ healthcare entity relationships in Azure Cosmos DB and ran time-series analysis
-                        across 5k+ legal queries to detect emerging regulatory trends.
-                    </p>
-                </li>
-                <hr class="experience-divider" />
-                <li>
-                    <div class="experience-header">
-                        <span class="experience-title">
-                            <span class="experience-role">
-                                Data Analyst
-                            </span>
-                            <span class="experience-separator">
-                                |
-                            </span>
-                            <a href="https://carvangoods.com.pk/" target="_blank">
-                                Carvan Goods Transport
-                            </a>
-                        </span>
-                        <span class="experience-date">
-                            January 2024 - June 2024
-                        </span>
-                    </div>
-                    <p class="experience-description">
-                        Automated fleet and delivery dashboards for real-time visibility, and forecasted shipment demand
-                        from 48+ months of historical data.
-                    </p>
-                </li>
-                <hr class="experience-divider" />
-                <li>
-                    <div class="experience-header">
-                        <span class="experience-title">
-                            <span class="experience-role">
-                                Data Science Intern
-                            </span>
-                            <span class="experience-separator">
-                                |
-                            </span>
-                            <a href="https://www.ubldigital.com/" target="_blank">
-                                United Bank Limited (UBL)
-                            </a>
-                        </span>
-                        <span class="experience-date">
-                            June 2023 - August 2023
-                        </span>
-                    </div>
-                    <p class="experience-description">
-                        Built a computer vision model for cheque fraud detection, reaching 83% validation accuracy after
-                        expanding the training set from 4k to 14k images.
-                    </p>
-                </li>
             </ul>
         </section>
 
@@ -161,82 +87,6 @@
                 Projects
             </h2>
             <ul class="project-list">
-                <li>
-                    <div class="project-header">
-                        <a href="https://github.com/dsan-5300/2026-project-2026-13" target="_blank">
-                            Hospital Readmission Prediction
-                        </a>
-                        <span class="project-techstack">
-                            Python, XGBoost, Lasso, Random Forest
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Predicted 30-day readmission and length of stay across 100k+ inpatient encounters using the
-                        Diabetes 130-US Hospitals dataset (AUC = 0.649, RMSE = 2.17 days).
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="https://medium.com/@bilalmalik1548/teaching-machines-to-read-complaints-when-the-data-refuses-to-behave-9057a31ba201" target="_blank">
-                            CFPB Complaint Modeling &amp; Classification
-                        </a>
-                        <span class="project-techstack">
-                            Python, XGBoost, Regression, Clustering
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Modeled socioeconomic disparities in consumer complaints by combining CFPB, ACS, and postal
-                        data, reaching 0.77 multiclass accuracy and 0.93 F1 for high-priority complaint triage.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="#" target="_blank">
-                            Insaf.AI - Legal NLP Data Extraction
-                        </a>
-                        <span class="project-techstack">
-                            Python, NLP, OpenAI Agents SDK
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        An NLP pipeline that extracts structured legal entities from free-text input to support
-                        automated First Information Report (FIR) drafting.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="./assets/molecular-property-prediction.pdf" target="_blank">
-                            Molecular Property Prediction
-                        </a>
-                        <span class="project-techstack">
-                            Python, PyTorch, PyTorch Geometric, GNN, SchNet, RDKit
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        Predicted quantum chemical properties on the QM9 dataset (134k molecules) across five models of
-                        increasing complexity, cutting MAE 55% over the fingerprint baseline by incorporating 3D atomic
-                        geometry.
-                    </p>
-                </li>
-                <hr class="projects-divider" />
-                <li>
-                    <div class="project-header">
-                        <a href="https://malikg.georgetown.domains/DSAN5200/" target="_blank">
-                            Where Have All the Bands Gone?
-                        </a>
-                        <span class="project-techstack">
-                            Python, D3.js, Observable Plot, MusicBrainz API, Quarto
-                        </span>
-                    </div>
-                    <p class="project-description">
-                        A data journalism site tracing six decades of Billboard Hot 100 history across 340k+ chart
-                        entries and 11k+ artists, with 8 custom interactive visualizations built in D3.js and Observable
-                        Plot.
-                    </p>
-                </li>
             </ul>
         </section>
 
@@ -245,55 +95,6 @@
                 Articles
             </h2>
             <ul class="article-list">
-                <li>
-                    <a href="https://www.linkedin.com/pulse/graphrag-showdown-deepseek-vs-openai-bilal-malik-iq5lf/?trackingId=DigEZJw%2FQ1KKAmgGA2VTZQ%3D%3D"
-                        target="_blank">
-                        GraphRAG Showdown: DeepSeek vs. OpenAI
-                    </a>
-                    <span class="article-date">
-                        February 6, 2025
-                    </span>
-                </li>
-                <hr class="articles-divider" />
-                <li>
-                    <a href="https://www.linkedin.com/pulse/graphrag-bridging-knowledge-graphs-generation-bilal-malik-yreyf/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
-                        target="_blank">
-                        Bridging Knowledge Graphs with Retrieval-Augmented Generation
-                    </a>
-                    <span class="article-date">
-                        November 11, 2024
-                    </span>
-                </li>
-                <hr class="articles-divider" />
-                <li>
-                    <a href="https://www.linkedin.com/pulse/integrating-cosmos-db-gremlin-visualizer-enhancing-graph-bilal-malik-mwpof/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
-                        target="_blank">
-                        Integrating Cosmos DB into Gremlin-Visualizer
-                    </a>
-                    <span class="article-date">
-                        September 23, 2024
-                    </span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="discography">
-            <h2>Discography</h2>
-            <ul class="discography-list">
-                <li class="discography-card">
-                    <a href="https://soundcloud.com/b6ilal/loverboy" target="_blank"><img class="discography-poster"
-                            src="https://i1.sndcdn.com/artworks-DrVhQznOHD6wFCQy-mfOrOQ-t1080x1080.jpg" alt=""></a>
-                </li>
-                <li class="discography-card">
-                    <a href="https://soundcloud.com/b6ilal/afternoon-heart" target="_blank"><img
-                            class="discography-poster"
-                            src="https://i1.sndcdn.com/artworks-oVyW2fbxR8VcCeL0-tKZzdg-t1080x1080.jpg" alt=""></a>
-                </li>
-                <li class="discography-card">
-                    <a href="https://soundcloud.com/b6ilal/sets/is-it-any-good" target="_blank"><img
-                            class="discography-poster"
-                            src="https://i1.sndcdn.com/artworks-rgjFRGJtVRGqNJqz-aZsWdA-t1080x1080.jpg" alt=""></a>
-                </li>
             </ul>
         </section>
 
@@ -305,57 +106,26 @@
         </section>
     </div>
 
-    <footer class="text-center py-4 text-light icons">
+    <footer class="icons">
         <div class="icon-container">
-            <a class="text-light mx-2" href="https://github.com/pinktownscavenger" target="_blank">
+            <a aria-label="GitHub" href="https://github.com/pinktownscavenger" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-github fa-lg">
                 </i>
             </a>
-            <a class="text-light mx-2" href="https://www.linkedin.com/in/bilalmalik01" target="_blank">
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/bilalmalik01" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-linkedin fa-lg">
                 </i>
             </a>
-            <a class="text-light mx-2" href="mailto:bilalmalik1548@gmail.com">
+            <a aria-label="Email" href="mailto:bilalmalik1548@gmail.com">
                 <i class="fas fa-envelope fa-lg">
                 </i>
             </a>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-    </script>
-
-
-    <script>
-        fetch('assets/movies.json')
-            .then(response => response.json())
-            .then(movies => {
-                const movieList = document.querySelector('.movie-list');
-                movieList.innerHTML = '';
-
-                movies.forEach(movie => {
-                    const li = document.createElement('li');
-                    li.classList.add('movie-card');
-
-                    const a = document.createElement('a');
-                    a.href = movie.link;
-                    a.target = '_blank';
-
-                    const img = document.createElement('img');
-                    img.src = movie.poster;
-                    img.alt = 'Movie Poster';
-                    img.classList.add('movie-poster');
-
-                    a.appendChild(img);
-                    li.appendChild(a);
-                    movieList.appendChild(li);
-                });
-            })
-            .catch(error => console.error('Error loading movies:', error));
+    <script src="js/main.js">
     </script>
 
 </body>
