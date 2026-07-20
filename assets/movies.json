@@ -1,5 +1,15 @@
 [
     {
+        "title": "Apex",
+        "link": "https://letterboxd.com/pinktownscvngr/film/apex-2026/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/9/2/4/7/1199247-apex-2026-0-600-0-900-crop.jpg?v=65880e39d9"
+    },
+    {
+        "title": "Peddi",
+        "link": "https://letterboxd.com/pinktownscvngr/film/peddi/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/9/5/3/5/7/3/953573-peddi-0-600-0-900-crop.jpg?v=2d78037fa8"
+    },
+    {
         "title": "Anwar",
         "link": "https://letterboxd.com/pinktownscvngr/film/anwar/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/8/9/6/5/18965-anwar-0-600-0-900-crop.jpg?v=48dddf51b2"
@@ -8,15 +18,5 @@
         "title": "Obsession",
         "link": "https://letterboxd.com/pinktownscvngr/film/obsession-2025/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6"
-    },
-    {
-        "title": "Desi Boyz",
-        "link": "https://letterboxd.com/pinktownscvngr/film/desi-boyz/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/6/6/4/3/0/66430-desi-boyz-0-600-0-900-crop.jpg?v=10afe8a3c1"
-    },
-    {
-        "title": "The Empty Man",
-        "link": "https://letterboxd.com/pinktownscvngr/film/the-empty-man/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/4/4/6/2/6/9/446269-the-empty-man-0-600-0-900-crop.jpg?v=d9ee98bd77"
     }
 ]
