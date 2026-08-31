@@ -1,5 +1,10 @@
 [
     {
+        "title": "Company",
+        "link": "https://letterboxd.com/pinktownscvngr/film/company/",
+        "poster": "https://a.ltrbxd.com/resized/film-poster/4/2/1/2/2/42122-company-0-600-0-900-crop.jpg?v=8750f2002d"
+    },
+    {
         "title": "Evil Dead Burn",
         "link": "https://letterboxd.com/pinktownscvngr/film/evil-dead-burn/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/9/7/0/2/2/1097022-evil-dead-burn-0-600-0-900-crop.jpg?v=398ff82d46"
@@ -13,10 +18,5 @@
         "title": "Spider-Man: Brand New Day",
         "link": "https://letterboxd.com/pinktownscvngr/film/spider-man-brand-new-day/",
         "poster": "https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-600-0-900-crop.jpg?v=ebe6beb4fc"
-    },
-    {
-        "title": "Slow West",
-        "link": "https://letterboxd.com/pinktownscvngr/film/slow-west/",
-        "poster": "https://a.ltrbxd.com/resized/film-poster/1/5/7/8/0/7/157807-slow-west-0-600-0-900-crop.jpg?v=d681680580"
     }
 ]
