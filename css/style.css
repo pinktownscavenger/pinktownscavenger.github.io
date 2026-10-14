@@ -113,8 +113,7 @@ ul {
 }
 
 .intro-text h5,
-.list-item,
-.project-description {
+.list-item {
     font-family: var(--serif-body);
 }
 
@@ -139,11 +138,10 @@ ul {
     white-space: nowrap;
 }
 
-.intro-image {
-    width: clamp(12rem, 18vw, 15rem);
-    max-width: 100%;
-    height: auto;
-    margin-right: 2rem;
+.intro-wheel {
+    flex-shrink: 0;
+    width: clamp(14rem, 26vw, 19rem);
+    margin: 0 1rem 0 0;
 }
 
 section:not(#home) {
@@ -162,8 +160,7 @@ section h2 {
 }
 
 .article-list,
-.experience-list,
-.project-list {
+.timeline {
     padding: 0;
 }
 
@@ -187,7 +184,6 @@ section h2 {
 }
 
 .article-item:hover a,
-.project-item:hover a,
 .list-item a:focus-visible {
     opacity: 0.9;
 }
@@ -201,8 +197,7 @@ section h2 {
     font-size: 1.05rem;
 }
 
-.article-date,
-.project-techstack {
+.article-date {
     color: var(--text);
     font-family: var(--serif-body);
     font-size: 0.9rem;
@@ -219,41 +214,43 @@ section h2 {
     opacity: 0.7;
 }
 
-.experience-header {
+/* Experience & education */
+.timeline-header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     gap: 1rem;
     margin-bottom: 0.3rem;
 }
 
-.experience-title {
+.timeline-title {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.35rem;
 }
 
-.experience-role,
-.experience-item a {
+.timeline-role,
+.timeline-item a,
+.timeline-item .item-label {
     font-size: 1.1rem;
     letter-spacing: 0.04rem;
 }
 
-.experience-role {
+.timeline-role {
     opacity: 0.8;
 }
 
-.experience-item a:hover,
-.experience-item a:focus-visible {
+.timeline-item a:hover,
+.timeline-item a:focus-visible {
     opacity: 0.9;
 }
 
-.experience-separator {
+.timeline-separator {
     opacity: 0.35;
 }
 
-.experience-date {
+.timeline-date {
     flex-shrink: 0;
     color: var(--text);
     font-family: var(--serif-body);
@@ -262,46 +259,105 @@ section h2 {
     opacity: 0.55;
 }
 
-.experience-description {
+.timeline-description {
     color: var(--text);
     font-size: 0.9rem;
     opacity: 0.65;
 }
 
-.project-header {
+/* Projects */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.project-card {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.4rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    border: 1px solid rgb(245 222 179 / 8%);
+    border-radius: 8px;
+    background-color: var(--panel);
+    font-family: var(--serif-body);
+    transition: border-color 0.3s ease;
 }
 
-.project-header a,
-.project-header .item-label {
-    font-size: 1.1rem;
-    letter-spacing: 0.04rem;
+.project-card:hover {
+    border-color: rgb(245 222 179 / 20%);
 }
 
-.project-techstack {
-    margin-left: 1rem;
-}
-
-.list-item:hover .project-header a {
+.project-card-title {
+    font-family: var(--serif-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
     opacity: 0.9;
 }
 
-.list-item:hover .project-techstack {
+.project-card-description {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    opacity: 0.65;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.project-tags li {
+    padding: 0.15rem 0.5rem;
+    border: 1px solid rgb(245 222 179 / 12%);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-style: italic;
     opacity: 0.7;
 }
 
-.project-description {
+.project-links {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--serif-display);
+    font-style: italic;
+}
+
+.project-links a {
     color: var(--text);
-    font-size: 0.9rem;
-    opacity: 0.65;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
-.list-item:hover .project-description {
-    opacity: 0.75;
+.project-links a::after {
+    content: " \2197";
+    font-style: normal;
+}
+
+.project-links a:hover,
+.project-links a:focus-visible {
+    opacity: 0.9;
+}
+
+/* Tech wheel */
+.tech-wheel {
+    position: relative;
+    color: var(--text);
+}
+
+.tech-wheel-canvas {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    cursor: grab;
+    touch-action: none;
+}
+
+.tech-wheel-canvas.is-dragging {
+    cursor: grabbing;
 }
 
 /* Movies */
@@ -362,8 +418,8 @@ footer {
         white-space: nowrap;
     }
 
-    .intro-image {
-        width: 12rem;
+    .intro-wheel {
+        width: 13rem;
     }
 }
 
@@ -441,7 +497,7 @@ footer {
     }
 
     .navbar-collapse.is-open {
-        max-height: 12rem;
+        max-height: 16rem;
         padding-top: 0.8rem;
         opacity: 1;
         transform: translateY(0);
@@ -481,8 +537,10 @@ footer {
         white-space: nowrap;
     }
 
-    .intro-image {
-        display: none;
+    .intro-wheel {
+        align-self: center;
+        width: min(100%, 17rem);
+        margin: 0.5rem auto 0;
     }
 
     section:not(#home) {
@@ -500,9 +558,24 @@ footer {
     }
 
     .article-item,
-    .experience-header,
-    .project-header {
+    .timeline-header {
         display: block;
+    }
+
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-card-title {
+        font-size: 1.1rem;
+    }
+
+    .project-card-description {
+        font-size: 0.85rem;
     }
 
     .article-item a {
@@ -510,38 +583,23 @@ footer {
     }
 
     .article-date,
-    .experience-date,
-    .project-techstack {
+    .timeline-date {
         display: block;
         margin-left: 0;
         font-size: 0.8rem;
     }
 
-    .experience-role,
-    .experience-item a {
+    .timeline-role,
+    .timeline-item a,
+    .timeline-item .item-label {
         font-size: 0.95rem;
     }
 
-    .experience-date {
+    .timeline-date {
         margin-top: 0.25rem;
     }
 
-    .experience-description {
-        font-size: 0.85rem;
-    }
-
-    .project-techstack {
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        text-align: left;
-    }
-
-    .project-header a,
-    .project-header .item-label {
-        font-size: 0.95rem;
-    }
-
-    .project-description {
+    .timeline-description {
         font-size: 0.85rem;
     }
 

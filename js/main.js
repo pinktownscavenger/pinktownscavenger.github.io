@@ -7,59 +7,72 @@ function applyExternalLinkOptions(link) {
     Object.assign(link, externalLinkOptions);
 }
 
-function createExternalLink(href, text) {
-    if (!href) {
-        const label = document.createElement('span');
-        label.className = 'item-label';
-        label.textContent = text;
-        return label;
+function createElement(tag, className, text) {
+    const element = document.createElement(tag);
+
+    if (className) {
+        element.className = className;
     }
 
-    const link = document.createElement('a');
+    if (text) {
+        element.textContent = text;
+    }
+
+    return element;
+}
+
+function createExternalLink(href, text) {
+    if (!href) {
+        return createElement('span', 'item-label', text);
+    }
+
+    const link = createElement('a', '', text);
     link.href = href;
-    link.textContent = text;
     applyExternalLinkOptions(link);
 
     return link;
 }
 
+function createTimelineItem({ title, org, orgLink, date, description }) {
+    const item = createElement('li', 'list-item timeline-item');
+    const header = createElement('div', 'timeline-header');
+    const heading = createElement('span', 'timeline-title');
+
+    heading.append(
+        createElement('span', 'timeline-role', title),
+        createElement('span', 'timeline-separator', '|'),
+        createExternalLink(orgLink, org)
+    );
+    header.append(heading, createElement('span', 'timeline-date', date));
+    item.appendChild(header);
+
+    if (description) {
+        item.appendChild(createElement('p', 'timeline-description', description));
+    }
+
+    return item;
+}
+
 function renderExperience(experience) {
-    const experienceList = document.querySelector('.experience-list');
-    experienceList.innerHTML = '';
+    const list = document.querySelector('.experience-list');
+    list.replaceChildren(...experience.map(job => createTimelineItem({
+        title: job.role,
+        org: job.company,
+        orgLink: job.companyLink,
+        date: job.date,
+        description: job.description
+    })));
+}
 
-    experience.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.className = 'list-item experience-item';
-
-        const header = document.createElement('div');
-        header.className = 'experience-header';
-
-        const title = document.createElement('span');
-        title.className = 'experience-title';
-
-        const role = document.createElement('span');
-        role.className = 'experience-role';
-        role.textContent = item.role;
-
-        const separator = document.createElement('span');
-        separator.className = 'experience-separator';
-        separator.textContent = '|';
-
-        const company = createExternalLink(item.companyLink, item.company);
-
-        const date = document.createElement('span');
-        date.className = 'experience-date';
-        date.textContent = item.date;
-
-        const description = document.createElement('p');
-        description.className = 'experience-description';
-        description.textContent = item.description;
-
-        title.append(role, separator, company);
-        header.append(title, date);
-        listItem.append(header, description);
-        experienceList.appendChild(listItem);
-    });
+function renderEducation(education) {
+    const list = document.querySelector('.education-list');
+    list.replaceChildren(...education.map(school => createTimelineItem({
+        title: school.degree,
+        org: school.school,
+        orgLink: school.schoolLink,
+        date: school.date,
+        description: school.location
+    })));
 }
 
 function renderArticles(articles) {
@@ -81,31 +94,42 @@ function renderArticles(articles) {
     });
 }
 
-function renderProjects(projects) {
-    const projectList = document.querySelector('.project-list');
-    projectList.innerHTML = '';
+function createProjectCard(project) {
+    const card = createElement('li', 'project-card');
+    const tags = createElement('ul', 'project-tags');
+    const links = createElement('div', 'project-links');
 
-    projects.forEach(project => {
-        const item = document.createElement('li');
-        item.className = 'list-item project-item';
-
-        const header = document.createElement('div');
-        header.className = 'project-header';
-
-        const link = createExternalLink(project.link, project.name);
-
-        const techstack = document.createElement('span');
-        techstack.className = 'project-techstack';
-        techstack.textContent = project.techstack;
-
-        const description = document.createElement('p');
-        description.className = 'project-description';
-        description.textContent = project.description;
-
-        header.append(link, techstack);
-        item.append(header, description);
-        projectList.appendChild(item);
+    project.techstack.split(', ').forEach(tech => {
+        tags.appendChild(createElement('li', '', tech));
     });
+
+    Object.entries(project.links || {}).forEach(([label, href]) => {
+        const link = createExternalLink(href, label);
+        link.setAttribute('aria-label', `${project.name} ${label}`);
+        links.appendChild(link);
+    });
+
+    card.append(
+        createElement('h3', 'project-card-title', project.name),
+        createElement('p', 'project-card-description', project.description),
+        tags
+    );
+
+    if (links.children.length) {
+        card.appendChild(links);
+    }
+
+    return card;
+}
+
+function renderProjects(projects) {
+    document.querySelector('.project-cards').replaceChildren(...projects.map(createProjectCard));
+}
+
+function renderSkills(skills) {
+    const wheel = document.querySelector('.tech-wheel');
+    wheel.querySelector('canvas').setAttribute('aria-label', `Tools I use: ${skills.join(', ')}`);
+    initTechWheel(wheel, skills);
 }
 
 function renderMovies(movies) {
@@ -155,14 +179,16 @@ async function init() {
     setupNavToggle();
 
     try {
-        const [{ articles, experience, projects }, movies] = await Promise.all([
+        const [{ articles, experience, education, projects, skills }, movies] = await Promise.all([
             loadJson('assets/content.json'),
             loadJson('assets/movies.json')
         ]);
 
         renderExperience(experience);
-        renderArticles(articles);
+        renderEducation(education);
         renderProjects(projects);
+        renderSkills(skills);
+        renderArticles(articles);
         renderMovies(movies);
     } catch (error) {
         console.error('Error loading portfolio data:', error);

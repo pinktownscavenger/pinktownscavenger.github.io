@@ -17,7 +17,7 @@
     <meta content="https://pinktownscavenger.github.io/images/desktop.png" property="og:image" />
     <meta content="summary" name="twitter:card" />
     <link href="./images/logo.png" rel="icon" type="image/png" />
-    <link href="css/style.css?v=9" rel="stylesheet" />
+    <link href="css/style.css?v=13" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -82,14 +82,24 @@
                     I model data.
                 </h1>
             </div>
-            <img alt="Pixel-art retro computer" class="intro-image" src="./images/desktop.png" />
+            <div class="tech-wheel intro-wheel">
+                <canvas class="tech-wheel-canvas" role="img"></canvas>
+            </div>
         </section>
 
         <section id="experience">
             <h2>
                 Experience
             </h2>
-            <ul class="experience-list">
+            <ul class="timeline experience-list">
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>
+                Education
+            </h2>
+            <ul class="timeline education-list">
             </ul>
         </section>
 
@@ -97,7 +107,7 @@
             <h2>
                 Projects
             </h2>
-            <ul class="project-list">
+            <ul class="project-cards">
             </ul>
         </section>
 
@@ -136,7 +146,11 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=3">
+    <script src="js/tech-icons.js?v=1">
+    </script>
+    <script src="js/tech-wheel.js?v=3">
+    </script>
+    <script src="js/main.js?v=5">
     </script>
 
 </body>

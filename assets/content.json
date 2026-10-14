@@ -39,36 +39,82 @@
             "description": "Built a computer vision model for cheque fraud detection, reaching 83% validation accuracy after expanding the training set from 4k to 14k images."
         }
     ],
+    "education": [
+        {
+            "degree": "M.S. in Data Science & Analytics",
+            "school": "Georgetown University",
+            "schoolLink": "https://analytics.georgetown.edu/",
+            "date": "August 2025 - May 2027",
+            "location": "Washington, D.C."
+        },
+        {
+            "degree": "B.S. in Computer Science",
+            "school": "GIK Institute",
+            "schoolLink": "https://giki.edu.pk/",
+            "date": "August 2020 - May 2024",
+            "location": "Topi, Pakistan"
+        }
+    ],
     "projects": [
         {
-            "name": "Hospital Readmission Prediction",
-            "techstack": "Python, XGBoost, Lasso, Random Forest",
-            "description": "Predicted 30-day readmission and length of stay across 100k+ inpatient encounters using the Diabetes 130-US Hospitals dataset (AUC = 0.649, RMSE = 2.17 days).",
-            "link": "https://github.com/dsan-5300/2026-project-2026-13"
+            "name": "ehr2rl",
+            "techstack": "Python, d3rlpy, BigQuery, pandas, MIMIC-IV",
+            "description": "An open-source Python library on PyPI that turns MIMIC-IV electronic health records into offline reinforcement learning datasets: patient trajectories, treatment actions, swappable reward functions, and export to d3rlpy.",
+            "links": {
+                "code": "https://github.com/pinktownscavenger/ehr2rl",
+                "docs": "https://pinktownscavenger.github.io/ehr2rl/",
+                "pypi": "https://pypi.org/project/ehr2rl/"
+            }
         },
         {
-            "name": "CFPB Complaint Modeling & Classification",
-            "techstack": "Python, XGBoost, Regression, Clustering",
-            "description": "Modeled socioeconomic disparities in consumer complaints by combining CFPB, ACS, and postal data, reaching 0.77 multiclass accuracy and 0.93 F1 for high-priority complaint triage.",
-            "link": "https://medium.com/@bilalmalik1548/teaching-machines-to-read-complaints-when-the-data-refuses-to-behave-9057a31ba201"
-        },
-        {
-            "name": "Insaf.AI - Legal NLP Data Extraction",
-            "techstack": "Python, NLP, OpenAI Agents SDK",
-            "description": "An NLP pipeline that extracts structured legal entities from free-text input to support automated First Information Report (FIR) drafting.",
-            "link": ""
-        },
-        {
-            "name": "Molecular Property Prediction",
-            "techstack": "Python, PyTorch, PyTorch Geometric, GNN, SchNet, RDKit",
-            "description": "Predicted quantum chemical properties on the QM9 dataset (134k molecules) across five models of increasing complexity, cutting MAE 55% over the fingerprint baseline by incorporating 3D atomic geometry.",
-            "link": "./assets/molecular-property-prediction.pdf"
+            "name": "CosmosVisualizer",
+            "techstack": "React, Node.js, Gremlin, Azure Cosmos DB",
+            "description": "A local workspace for exploring Azure Cosmos DB graphs: run Gremlin queries, see results as an interactive network, and track request-unit cost and partition fan-out. Includes a demo mode that needs no Azure account.",
+            "links": {
+                "code": "https://github.com/pinktownscavenger/CosmosVisualizer"
+            }
         },
         {
             "name": "Where Have All the Bands Gone?",
             "techstack": "Python, D3.js, Observable Plot, MusicBrainz API, Quarto",
             "description": "A data journalism site tracing six decades of Billboard Hot 100 history across 340k+ chart entries and 11k+ artists, with 8 custom interactive visualizations built in D3.js and Observable Plot.",
-            "link": "https://malikg.georgetown.domains/DSAN5200/"
+            "links": {
+                "site": "https://malikg.georgetown.domains/DSAN5200/"
+            }
+        },
+        {
+            "name": "Public Trust in U.S. Institutions",
+            "techstack": "R, Python, statsmodels, ARIMA",
+            "description": "A statistical study of 50 years of survey data on trust in the press, banks, government, and education. Political polarization tracks falling press confidence closely (r = -0.825).",
+            "links": {}
         }
+    ],
+    "skills": [
+        "Python",
+        "R",
+        "JavaScript",
+        "scikit-learn",
+        "PyTorch",
+        "LangChain",
+        "pandas",
+        "NumPy",
+        "SciPy",
+        "Jupyter",
+        "D3.js",
+        "Observable",
+        "Plotly",
+        "Streamlit",
+        "Quarto",
+        "MySQL",
+        "MongoDB",
+        "BigQuery",
+        "Git",
+        "GitHub",
+        "FastAPI",
+        "Flask",
+        "Docker",
+        "React",
+        "Node.js",
+        "PyPI"
     ]
 }
