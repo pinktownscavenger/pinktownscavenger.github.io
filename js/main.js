@@ -8,13 +8,17 @@ function applyExternalLinkOptions(link) {
 }
 
 function createExternalLink(href, text) {
+    if (!href) {
+        const label = document.createElement('span');
+        label.className = 'item-label';
+        label.textContent = text;
+        return label;
+    }
+
     const link = document.createElement('a');
     link.href = href;
     link.textContent = text;
-
-    if (href !== '#') {
-        applyExternalLinkOptions(link);
-    }
+    applyExternalLinkOptions(link);
 
     return link;
 }

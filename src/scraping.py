@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import feedparser
 from bs4 import BeautifulSoup
@@ -7,6 +8,11 @@ movies_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../
 
 rss_url = "https://letterboxd.com/pinktownscvngr/rss/"
 feed = feedparser.parse(rss_url)
+
+# Keep the existing movies.json if the feed is unreachable or empty
+if not feed.entries:
+    print(f"No entries fetched from {rss_url}; leaving movies.json unchanged.")
+    sys.exit(0)
 
 recent_movies = []
 for entry in feed.entries[:4]:

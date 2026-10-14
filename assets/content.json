@@ -3,17 +3,17 @@
         {
             "title": "GraphRAG Showdown: DeepSeek vs. OpenAI",
             "date": "February 6, 2025",
-            "link": "https://www.linkedin.com/pulse/graphrag-showdown-deepseek-vs-openai-bilal-malik-iq5lf/?trackingId=DigEZJw%2FQ1KKAmgGA2VTZQ%3D%3D"
+            "link": "https://www.linkedin.com/pulse/graphrag-showdown-deepseek-vs-openai-bilal-malik-iq5lf/"
         },
         {
             "title": "Bridging Knowledge Graphs with Retrieval-Augmented Generation",
             "date": "November 11, 2024",
-            "link": "https://www.linkedin.com/pulse/graphrag-bridging-knowledge-graphs-generation-bilal-malik-yreyf/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
+            "link": "https://www.linkedin.com/pulse/graphrag-bridging-knowledge-graphs-generation-bilal-malik-yreyf/"
         },
         {
             "title": "Integrating Cosmos DB into Gremlin-Visualizer",
             "date": "September 23, 2024",
-            "link": "https://www.linkedin.com/pulse/integrating-cosmos-db-gremlin-visualizer-enhancing-graph-bilal-malik-mwpof/?trackingId=gDRVx9fiR%2B6Sow4z8cp8fg%3D%3D"
+            "link": "https://www.linkedin.com/pulse/integrating-cosmos-db-gremlin-visualizer-enhancing-graph-bilal-malik-mwpof/"
         }
     ],
     "experience": [
@@ -56,7 +56,7 @@
             "name": "Insaf.AI - Legal NLP Data Extraction",
             "techstack": "Python, NLP, OpenAI Agents SDK",
             "description": "An NLP pipeline that extracts structured legal entities from free-text input to support automated First Information Report (FIR) drafting.",
-            "link": "#"
+            "link": ""
         },
         {
             "name": "Molecular Property Prediction",
