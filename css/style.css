@@ -25,6 +25,16 @@ body {
     color: var(--text);
 }
 
+.bg-waves {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+    pointer-events: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -193,7 +203,8 @@ section h2 {
     justify-content: space-between;
 }
 
-.article-item a {
+.article-item a,
+.article-item .item-label {
     font-size: 1.05rem;
 }
 
@@ -578,7 +589,8 @@ footer {
         font-size: 0.85rem;
     }
 
-    .article-item a {
+    .article-item a,
+    .article-item .item-label {
         font-size: 0.9rem;
     }
 

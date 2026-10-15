@@ -75,23 +75,18 @@ function renderEducation(education) {
     })));
 }
 
-function renderArticles(articles) {
-    const articleList = document.querySelector('.article-list');
-    articleList.innerHTML = '';
+// Title on the left, faint italic detail (date, author) on the right
+function renderTitledList(selector, entries, getDetail) {
+    const list = document.querySelector(selector);
 
-    articles.forEach(article => {
-        const item = document.createElement('li');
-        item.className = 'list-item article-item';
-
-        const link = createExternalLink(article.link, article.title);
-
-        const date = document.createElement('span');
-        date.className = 'article-date';
-        date.textContent = article.date;
-
-        item.append(link, date);
-        articleList.appendChild(item);
-    });
+    list.replaceChildren(...entries.map(entry => {
+        const item = createElement('li', 'list-item article-item');
+        item.append(
+            createExternalLink(entry.link, entry.title),
+            createElement('span', 'article-date', getDetail(entry))
+        );
+        return item;
+    }));
 }
 
 function createProjectCard(project) {
@@ -166,7 +161,8 @@ function setupNavToggle() {
 }
 
 async function loadJson(path) {
-    const response = await fetch(path);
+    // Revalidate so a fresh deploy never pairs new code with stale cached data
+    const response = await fetch(path, { cache: 'no-cache' });
 
     if (!response.ok) {
         throw new Error(`Unable to load ${path}`);
@@ -179,7 +175,7 @@ async function init() {
     setupNavToggle();
 
     try {
-        const [{ articles, experience, education, projects, skills }, movies] = await Promise.all([
+        const [{ articles, reading, experience, education, projects, skills }, movies] = await Promise.all([
             loadJson('assets/content.json'),
             loadJson('assets/movies.json')
         ]);
@@ -188,7 +184,8 @@ async function init() {
         renderEducation(education);
         renderProjects(projects);
         renderSkills(skills);
-        renderArticles(articles);
+        renderTitledList('.article-list', articles, article => article.date);
+        renderTitledList('.reading-list', reading, book => book.author);
         renderMovies(movies);
     } catch (error) {
         console.error('Error loading portfolio data:', error);

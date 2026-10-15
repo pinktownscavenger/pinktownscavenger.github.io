@@ -17,7 +17,7 @@
     <meta content="https://pinktownscavenger.github.io/images/desktop.png" property="og:image" />
     <meta content="summary" name="twitter:card" />
     <link href="./images/logo.png" rel="icon" type="image/png" />
-    <link href="css/style.css?v=13" rel="stylesheet" />
+    <link href="css/style.css?v=17" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <canvas aria-hidden="true" class="bg-waves"></canvas>
     <!-- Nav Bar -->
     <nav class="navbar">
         <a aria-label="Home" class="navbar-brand" href="#home">
@@ -119,6 +120,14 @@
             </ul>
         </section>
 
+        <section id="reading">
+            <h2>
+                Currently Reading
+            </h2>
+            <ul class="article-list reading-list">
+            </ul>
+        </section>
+
         <section id="movies">
             <h2>Recently Watched</h2>
             <ul class="movie-list">
@@ -146,11 +155,13 @@
         </div>
     </footer>
 
+    <script src="js/waves.js?v=3">
+    </script>
     <script src="js/tech-icons.js?v=1">
     </script>
     <script src="js/tech-wheel.js?v=3">
     </script>
-    <script src="js/main.js?v=5">
+    <script src="js/main.js?v=7">
     </script>
 
 </body>
